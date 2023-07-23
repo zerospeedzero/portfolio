@@ -25,19 +25,19 @@ const ProjectItem = ({item}) => {
           with ease.
       </li>
       <li class="mb-2">
-          By leveraging OpenWeather's data, I provide real-time weather updates, allowing hikers to stay informed
+          By leveraging OpenWeather&apos;s data, I provide real-time weather updates, allowing hikers to stay informed
           about current conditions, and ensuring a safe and enjoyable experience amidst the stunning landscapes of
           Fish Creek.
       </li>
       <li class="mb-2">
-          The integration with Instagram's Personal API allows hikers to view captivating photos and videos shared
+          The integration with Instagram&apos;s Personal API allows hikers to view captivating photos and videos shared
           by us, inspiring hikers to embark on their own memorable journeys and fostering a vibrant hiking
           community.
       </li>
       <li class="mb-2">
           Through the integration of Google Maps API, hikers can explore interactive maps, discover hiking trails,
           and access detailed directions, making it convenient for both local and international hikers to navigate
-          and explore Fish Creek's picturesque terrain.
+          and explore Fish Creek&apos;s picturesque terrain.
       </li>
       <li class="mb-2">
           Additionally, the website incorporates seamless social media integration, enabling hikers to easily share
@@ -168,7 +168,7 @@ const ProjectItem = ({item}) => {
 <div class="container mx-auto p-4">
     <h1 class="text-4xl font-bold mb-4">Overview</h1>
     <p class="mb-4">
-        I've developed a website that safeguards a secret message, requiring successful authentication for access. Following are the functions and features of this website.
+        I&apos;ve developed a website that safeguards a secret message, requiring successful authentication for access. Following are the functions and features of this website.
     </p>
     <ol class="list-decimal list-inside mb-4">
         <li class="mb-2">
@@ -178,13 +178,13 @@ const ProjectItem = ({item}) => {
             Prior to signing in, the background animation displays a captivating black and green matrix effect.
         </li>
         <li class="mb-2">
-            Once authenticated, the secret message "Artificial intelligence for IT Operations" is revealed to the authorized user as an animated background.
+            Once authenticated, the secret message &quot;Artificial intelligence for IT Operations&quot; is revealed to the authorized user as an animated background.
         </li>
         <li class="mb-2">
             To ensure a seamless transition, logging out triggers a colour transformation of the text, resembling the matrix animation with colour texts.
         </li>
         <li class="mb-2">
-            This website doesn't rely on videos, After Effects, or other external animation tools; the entire animation is achieved purely through JavaScript coding. By leveraging vanilla JavaScript, I was able to create a dynamic and interactive website without the need for additional libraries or frameworks.
+            This website doesn&apos;t rely on videos, After Effects, or other external animation tools; the entire animation is achieved purely through JavaScript coding. By leveraging vanilla JavaScript, I was able to create a dynamic and interactive website without the need for additional libraries or frameworks.
         </li>
         <li class="mb-2">
             Users are provided with a secure and immersive experience, as they navigate through the authentication process and discover the hidden secret.
