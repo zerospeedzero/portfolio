@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {box-sizing: border-box;}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 10, 25, 47, 1;
+  /* --background: transparent; */
+  /* --background: rgba(var(--background-rgb)) */
+  /* --p1-rgb: 23, 23, 55, 1;
+  --p2: 247, 237, 226, 1;
+  --s1: 250, 209, 102, 1;
+  --s2: 239, 71, 102, 1;
+  --a1: 72, 214, 160, 1;   */
+  /* --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html {
+  scroll-behavior: smooth !important;
+}
+@layer base {
+  body {
+    @apply font-[roboto] bg-p1 text-p2 tracking-wide;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }    
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+/* chatbot */
+
+.react-chatbot-kit-chat-input {color: black}
