@@ -25,12 +25,12 @@ function Box({project, setShow}) {
           <h3 className="text-3xl p-4">{project.name}</h3>
           <button className="text-p1 px-10 py-4" onClick={()=>{setShow(false)}}><FaWindowClose className='w-6 h-6'/></button>
         </div>
-        <div className='p-8 text-left'>
+        <div className='p-2  md:p-8 text-left'>
           {/* <HtmlReader filename={project.html}/> */}
           <ProjectItem item={project.html}/>
         </div>
         <div className='flex flex-row justify-center items-center'>
-          <button className="bg-a1 text-p1 px-8 py-2 rounded-md" onClick={()=>{setShow(false)}}>Close</button>
+          <button className="bg-a1 text-p1 px-8 py-2 mb-8 rounded-md" onClick={()=>{setShow(false)}}>Close</button>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ const Project = () => {
           // Desktop code
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> 
           { projects.map((project, index) => (
-            <div className="mb-16 shadow-sm shadow-a1 rounded-lg border-2 border-a1" key={index}>
+            <div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index}>
               <div className="relative  group container rounded-md flex justify-center items-center mx-auto content-div">
                 <img className="absolute z-[-1]" src={project.image} width="auto" height="auto"/>
                 {/* hover effect */}
@@ -128,9 +128,9 @@ const Project = () => {
           // Mobile code
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"> 
           { projects.map((project, index) => (
-            <div key={index}>
-              <div className="relative shadow-lg shadow-gray-500  container rounded-md flex justify-center items-center mx-auto content-div">
-                <img className="absolute rounded-md z-[-1]" src={project.image} width="auto" height="auto"/>
+            <div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index}>
+              <div className="relative  container flex justify-center items-center mx-auto ">
+                <img className="absolute  z-[-1]" src={project.image} width="auto" height="auto"/>
                 {/* hover effect */}
                 <div className="w-full aspect-video flex flex-col justify-center items-center rounded-md bg-transparent">
                   <button className="w-full h-full" onClick={() => {setCurrent(project); if (project.html == '') {setPlay(true)} else {setShow(!show)};}}></button>
@@ -139,8 +139,8 @@ const Project = () => {
                 </div>
               </div>
 
-              <div className='flex justify-center items-center py-2'>
-                <h3 className='pb-4 text-p2 '>{project.name}</h3> 
+              <div className='flex bg-p1 p-8 flex-col justify-center items-center py-2'>
+                <h3 className=' text-p2 '>{project.name}</h3> 
               </div>
 
             </div>

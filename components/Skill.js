@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion, useScroll } from "framer-motion"
+import {SiAnsible} from 'react-icons/si'
 
 const Skill = () => {
   const container = {
@@ -55,7 +56,10 @@ const Skill = () => {
           ))}
         </motion.div>
       </div>
-
+      <div className='text-red-600 '>
+        <p>hello</p>
+        <SiAnsible size={70}/>
+      </div>
     </div>
   )
 }

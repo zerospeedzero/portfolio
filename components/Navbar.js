@@ -70,7 +70,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? ' fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-p2 text-p1 p-10 ease-in duration-500 z-20'
+            ? ' fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-p2 text-p1 p-8 ease-in duration-500 z-20'
             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }
       >
@@ -86,40 +86,42 @@ const Navbar = () => {
               <AiOutlineClose size={20}/>
             </div>
           </div>
-          <div className='border-b border-p1/30 my-4'>
+          <div className='border-b border-p1/30 my-0'>
             <p className='w-[85%] md:w-[90%] py-4 text text-p1/80'>
               Let&#39;s build something legendary together
             </p>
           </div>
         </div>
-        <div className='h-[60%] py-4 flex flex-col justify-center'>
-          <ul className='flex flex-col'>
-            <Link href='/'>
-              <li  onClick={() => setNav(false)} className='py-4 text-2xl'>
-                Home
-              </li>
-            </Link>
-            <Link href='/#about'>
-              <li onClick={() => setNav(false)} className='py-4 text-2xl'>
-                About
-              </li>
-            </Link>
-            <Link href='/#project'>
-              <li onClick={() => setNav(false)} className='py-4 text-2xl'>
-                Projects
-              </li>
-            </Link>
-            <Link href='/#skill'>
-              <li onClick={() => setNav(false)} className='py-4 text-2xl'>
-                Skills
-              </li>
-            </Link>
-            <Link href='/#contact'>
-              <li onClick={() => setNav(false)} className='py-4 text-2xl'>
-                Contact
-              </li>
-            </Link>
-          </ul>
+        <div className='h-[60%] flex flex-col justify-center items-center'>
+          <div className='py-4 flex flex-col justify-center'>
+            <ul className='flex flex-col'>
+              <Link href='/'>
+                <li  onClick={() => setNav(false)} className='py-4 text-5xl font-bold'>
+                  Home
+                </li>
+              </Link>
+              <Link href='/#about'>
+                <li onClick={() => setNav(false)} className='py-4 text-5xl font-bold'>
+                  About
+                </li>
+              </Link>
+              <Link href='/#project'>
+                <li onClick={() => setNav(false)} className='py-4 text-5xl font-bold'>
+                  Projects
+                </li>
+              </Link>
+              <Link href='/#skill'>
+                <li onClick={() => setNav(false)} className='py-4 text-5xl font-bold'>
+                  Skills
+                </li>
+              </Link>
+              <Link href='/#contact'>
+                <li onClick={() => setNav(false)} className='py-4 text-5xl font-bold'>
+                  Contact
+                </li>
+              </Link>
+            </ul>
+          </div>
         </div>
         <div className='h-[20%]'>
           <div className=''>
@@ -133,7 +135,7 @@ const Navbar = () => {
                 rel='noreferrer'
               >
                 <div className='rounded-full shadow-lg bg-blue-600 shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn className=" text-white" size={30}/>
+                  <FaLinkedinIn className=" text-white" size={50}/>
                 </div>
               </Link>
               <Link
@@ -142,7 +144,7 @@ const Navbar = () => {
                 rel='noreferrer'
               >
                 <div className='rounded-full shadow-lg bg-s2 shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub className=" text-white" size={30} />
+                  <FaGithub className=" text-white" size={50} />
                 </div>
               </Link>
               <Link href='mailto: zerospeedzero@gmail.com'>
@@ -150,7 +152,7 @@ const Navbar = () => {
                   onClick={() => setNav(!nav)}
                   className='rounded-full bg-a1 shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <AiOutlineMail className=" text-p1" size={30} />
+                  <AiOutlineMail className=" text-p1" size={50} />
                 </div>
               </Link>
               <Link href='/#contact'>
@@ -158,7 +160,7 @@ const Navbar = () => {
                   onClick={() => setNav(!nav)}
                   className='rounded-full bg-s1 shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <BsFillPersonLinesFill className=" text-p1" size={30}/>
+                  <BsFillPersonLinesFill className=" text-p1" size={50}/>
                 </div>
               </Link>
             </div>
