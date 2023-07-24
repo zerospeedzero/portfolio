@@ -92,11 +92,11 @@ const Project = () => {
         </div>
         { isMobile != true ? (
           // Desktop code
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"> 
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> 
           { projects.map((project, index) => (
-            <div className="pb-16" key={index}>
-              <div className="relative shadow-lg shadow-gray-500  group container rounded-md flex justify-center items-center mx-auto content-div">
-                <img className="absolute rounded-md z-[-1]" src={project.image} width="auto" height="auto"/>
+            <div className="mb-16 shadow-sm shadow-a1 rounded-lg border-2 border-a1" key={index}>
+              <div className="relative  group container rounded-md flex justify-center items-center mx-auto content-div">
+                <img className="absolute z-[-1]" src={project.image} width="auto" height="auto"/>
                 {/* hover effect */}
                 <div className="w-full aspect-video flex flex-col justify-center items-center rounded-md  bg-gradient-to-r from-blue-600 to-blue-400 opacity-0 md:group-hover:opacity-100">
                   <span  className='text-2xl text-p2  font-bold tracking-wider'>
@@ -118,8 +118,8 @@ const Project = () => {
                   </div>                                  
                 </div>
               </div>
-              <div className='flex justify-center items-center py-2'>
-                <h3 className='pb-4 text-p2 '>{project.name}</h3> 
+              <div className='bg-p1 flex flex-col justify-center items-center py-2'>
+                <h3 className=' text-p2 text-justify '>{project.name}</h3> 
               </div>
             </div>
           ))}
