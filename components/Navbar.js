@@ -37,7 +37,6 @@ const Navbar = () => {
       )
     );
     setMobile(mobile);
-    console.log(mobile)
   }, []);
   return (
     <div ref={navbar} className='fixed w-full h-[5rem] flex justify-between items-center px-4 bg-p1 z-10'>

@@ -69,7 +69,6 @@ const Project = () => {
       )
     );
     setMobile(mobile);
-    console.log(mobile)
   }, []);  
   const [show, setShow] = useState(false);
   const [play, setPlay] = useState(false);

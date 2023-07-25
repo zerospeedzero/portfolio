@@ -14,7 +14,6 @@ const About = () => {
       )
     );
     setMobile(mobile);
-    console.log(mobile)
   }, []);
   return (
     <div name='about' className='w-full h-screen'>
