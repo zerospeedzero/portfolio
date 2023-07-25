@@ -80,6 +80,7 @@ const Contact = () => {
                       className='border-2 rounded-lg p-1 flex border-gray-300'
                       type='text'
                       name='name'
+                      required
                     />
                   </div>
                   <div className='flex flex-col'>
@@ -98,7 +99,8 @@ const Contact = () => {
                   <input
                     className='border-2 rounded-lg p-1 flex border-gray-300'
                     type='email'
-                    name='email'
+                    name='email' 
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-1'>
@@ -115,6 +117,7 @@ const Contact = () => {
                     className='border-2 rounded-lg p-1 border-gray-300'
                     rows='4'
                     name='message'
+                    required
                   ></textarea>
                 </div>
                 <button className='bg-s2 text-bold text-lg text-p1 rounded-md w-full p-4 mt-4 hover:bg-s1'>
