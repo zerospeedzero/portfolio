@@ -58,7 +58,7 @@ export default function Home() {
         }
       />      
       <motion.div className='bg-p1 fixed top-20 bottom-0 left-0 right-0 z-[-10]' ref={myRef}
-        initial={{opacity:0}} animate={{opacity:0.8}} transition={{duration: 2, delay: 2.8}}
+        initial={{opacity:0}} animate={{opacity:1}} transition={{duration: 2, delay: 2.8}}
       >
       </motion.div>
       <Navbar/>

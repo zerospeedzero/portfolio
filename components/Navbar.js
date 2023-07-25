@@ -51,7 +51,7 @@ const Navbar = () => {
         <ul className='hidden md:flex'>
           {menu.map((item, index) => 
             <motion.li key={index} initial={{scale: 1}} whileHover={{scale: 1.4}} transition={{duration: 0.5 , type: 'spring', ease: 'easeOut'}}
-              className='hover:text-a1'
+              className='text-xl hover:text-a1'
             >
               <Link href={item.link}>{item.name}</Link>
             </motion.li>

@@ -81,7 +81,26 @@ const Project = () => {
     {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
     {name: 'Interactive Map 6', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
   ]
-  // console.log(isMobile)  
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: easeInOut,
+        duration: 0.5,
+        delayChildren: 0.2,
+        staggerChildren: 0.3
+      }
+    }
+  }
+  const item = {
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  }  
   return (
     <div id="project" name="project" className='pt-[100px] min-h-screen'>
       <div className='max-w-[1180px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
@@ -91,9 +110,9 @@ const Project = () => {
         </div>
         { isMobile != true ? (
           // Desktop code
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> 
+          <motion.div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8" variants={container} initial="hidden" whileInView="visible"> 
           { projects.map((project, index) => (
-            <div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index}>
+            <motion.div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index} variants={item}>
               <div className="relative  group container rounded-md flex justify-center items-center mx-auto content-div">
                 <img className="absolute z-[-1]" src={project.image} width="auto" height="auto"/>
                 {/* hover effect */}
@@ -118,11 +137,11 @@ const Project = () => {
                 </div>
               </div>
               <div className='bg-p1 flex flex-col justify-center items-center py-2'>
-                <h3 className=' text-p2 text-justify '>{project.name}</h3> 
+                <h3 className=' text-s1 text-lg text-justify '>{project.name}</h3> 
               </div>
-            </div>
+            </motion.div>
           ))}
-          </div>
+          </motion.div>
         ) : (
           // Mobile code
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"> 

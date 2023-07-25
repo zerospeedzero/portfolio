@@ -47,11 +47,11 @@ const Skill = () => {
           variants={container} initial="hidden" whileInView="visible"
         >
           {skills.map((skill, index) => (
-            <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/80 text-p1 rounded-xl p-4'
+            <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/20 text-s1 rounded-xl p-4'
               variants={item}
             >
               <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/>
-              <p className='mt-2 text-xl font-bold'>{skill.name}</p>
+              <p className='mt-2 text-lg font-bold'>{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
