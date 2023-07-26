@@ -50,8 +50,8 @@ const Navbar = () => {
       <motion.div className='flex flex-col text-s1' initial={{scale: 1.3, transform: "translateY(-70px)" }} animate={{scale: 1, transform: "translateY(0px)"}} transition={{duration:1, delay:2.3}}>
         <ul className='hidden md:flex'>
           {menu.map((item, index) => 
-            <motion.li key={index} initial={{scale: 1}} whileHover={{scale: 1.4}} transition={{duration: 0.5 , type: 'spring', ease: 'easeOut'}}
-              className='text-xl hover:text-a1'
+            <motion.li key={index} initial={{scale: 1}} whileHover={{scale: 1.2}} transition={{duration: 0.5 , type: 'spring', ease: 'easeOut'}}
+              className='text-lg hover:text-a1'
             >
               <Link href={item.link}>{item.name}</Link>
             </motion.li>

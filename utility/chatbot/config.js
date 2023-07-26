@@ -69,11 +69,11 @@ const config = {
       Color: '#F7EDE2'
     },
     chatButton: {
-      backgroundColor: '#EF476E',
+      backgroundColor: '#FAD166',
     },
   },
   customComponents: {
-    header: () => <div style={{ backgroundColor: '#EF476E', color: '#171737', padding: "10px", borderRadius: "3px" }}>&#128075;&nbsp;&nbsp;George's chatbot&nbsp;&nbsp;&#128075;</div>,
+    header: () => <div style={{ backgroundColor: '#FAD166', color: '#171737', padding: "12px", borderRadius: "3px" }}>George's chatbot</div>,
     botAvatar: () => <div class="react-chatbot-kit-chat-bot-avatar"><div class="react-chatbot-kit-chat-bot-avatar-container"><img className="rounded-full" src="/logo4.jpg" width="40" height="40"/> </div></div>,
     userChatMessage: (props) => <userChatMessage {...props} />
   },

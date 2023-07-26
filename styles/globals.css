@@ -43,4 +43,7 @@ html {
 
 /* chatbot */
 
-.react-chatbot-kit-chat-input {color: black}
+.react-chatbot-kit-chat-input {color: #171737;}
+/* .react-chatbot-kit-chat-bot-message {background-color: #EF476E  !important; } */
+.react-chatbot-kit-chat-btn-send-icon path {fill:black;}
+
