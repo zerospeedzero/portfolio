@@ -74,12 +74,13 @@ const Project = () => {
   const [play, setPlay] = useState(false);
   const [current, setCurrent] = useState(null);
   const projects = [
-    {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
+    {name: 'Microservices', html:  'microservices', image: '/assets/projects/microservices.gif'},
     {name: 'NFT SAIT marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
-    {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/ecommerce.mp4'},
+    {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
+    {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
+    {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/ecommerce.mp4'},
     {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
-    {name: 'Interactive Map 6', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
   ]
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -127,11 +128,11 @@ const Project = () => {
                       Detail
                     </button>}
                     {(show && current.name == project.name) ? <Box project={current} setShow={setShow}/> : null}
-                    <button className='invisible md:visible text-center min-w-[100px] rounded-lg px-2 py-2 m-2 bg-white text-gray-700 font-bold text-md'
+                    { project.video && <button className='invisible md:visible text-center min-w-[100px] rounded-lg px-2 py-2 m-2 bg-white text-gray-700 font-bold text-md'
                       onClick={()=>{setCurrent(project);setPlay(true)}}
                     >
                       Demo
-                    </button>
+                    </button>}
                     {(play && current.name == project.name)? <Video videoUrl={current.video} setPlay={setPlay}/> : null}
                   </div>                                  
                 </div>
