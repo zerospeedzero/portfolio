@@ -360,7 +360,7 @@ const ProjectItem = ({item}) => {
             <div></div>
         ):(null)
     }
-    {item == '3' ? (
+    {item == '4' ? (
             <div></div>
         ):(null)
     }
