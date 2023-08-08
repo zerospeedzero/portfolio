@@ -114,7 +114,7 @@ const Project = () => {
           // Desktop code
           <motion.div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8" variants={container} initial="hidden" whileInView="visible"> 
           { projects.map((project, index) => (
-            <motion.div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index} variants={item}>
+            <motion.div className="mb-0 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index} variants={item}>
               <div className="relative  group container rounded-md flex justify-center items-center mx-auto content-div">
                 <img className="absolute z-[-1]" src={project.image} width="auto" height="auto"/>
                 {/* hover effect */}

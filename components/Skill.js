@@ -23,7 +23,7 @@ const Skill = () => {
     }
   }
   const skills  = [
-    {name: 'OpenShift', image: '/assets/skills/red-hat-openshift-seeklogo.com.svg', hints: 'OpenShift'},
+    {name: 'OpenShift', image: '/assets/skills/openshift-seeklogo.com.svg', hints: 'OpenShift'},
     {name: 'Kubernetes', image: '/assets/skills/kubernetes.svg', hints: 'Kubernetes'},
     {name: 'AIOps', image: '/assets/skills/AIOps_Technical_Specialist_-_Foundational.png', hints: 'AIOps'},
     {name: 'Data Science', image: '/assets/skills/Applied_Data_Science_with_Python.png', hints: 'Python'},
@@ -50,7 +50,10 @@ const Skill = () => {
             <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/20 text-s1 rounded-xl p-4'
               variants={item}
             >
-              <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/>
+              {/* <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/> */}
+              <motion.img width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}
+                whileHover={{scale: 1.1,}}   transition={{duration: 1, type: "spring", stiffness: 400, damping: 10 }}
+              />
               <p className='mt-2 text-lg font-bold'>{skill.name}</p>
             </motion.div>
           ))}

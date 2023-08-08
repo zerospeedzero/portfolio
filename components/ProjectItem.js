@@ -99,9 +99,9 @@ const ProjectItem = ({item}) => {
 
         <h2 class="text-2xl font-bold mb-4">NFT SAIT marketplace</h2>
         <ol class="list-decimal list-inside mb-4">
-            <li class="mb-2">In this cutting-edge project, we have developed a Web 3.0 application hosted on the Azure Cloud platform, providing a curated listing of our exclusive NFT products. Our NFT graphic products showcase the exceptional work from the Visual Communication and Web Communication courses.</li>
-            <li class="mb-2">Central to this application are two pre-defined smart contracts: &quot;Marketplace&quot; and &quot;NFT Collection.&quot; The &quot;Marketplace&quot; smart contract supports NFTs in both ERC721 and ERC1155 formats, enabling seamless listing and auctioning of our NFTs. To make these products accessible to the public, the &quot;Marketplace&quot; smart contract must be deployed as a transaction on the selected blockchain network. As an illustration, we have deployed the &quot;SAIT NFT&quot; marketplace on the Goerli network, which serves as a testing blockchain network for developers on Ethereum. Consequently, any participant on this blockchain network gains visibility into our NFT listings and auctions via the unique address &quot;0x75B9cb48afE6D68Dc4ed40e79741eA8Ca71AC02d&quot; associated with the NFT &quot;Marketplace.&quot;</li>
-            <li class="mb-2">Additionally, we have utilized the &quot;NFT Collection&quot; smart contract to group NFTs for selling or auctioning purposes. These collections serve as another type of smart contract on the blockchain network. As an example, we have introduced the &quot;VisualCommunication&quot; NFT collection within the marketplace to showcase our outstanding assets from the Visual Communication assignments. Ownership of these NFTs is attributed to specific account addresses, which will be elaborated on in a subsequent section.</li>
+            <li class="mb-2">In this cutting-edge project, I have developed a Web 3.0 application hosted on the Azure Cloud platform, providing a curated listing of my exclusive NFT products. My NFT graphic products showcase the exceptional work from the Visual Communication and Web Communication courses.</li>
+            <li class="mb-2">Central to this application are two pre-defined smart contracts: &quot;Marketplace&quot; and &quot;NFT Collection.&quot; The &quot;Marketplace&quot; smart contract supports NFTs in both ERC721 and ERC1155 formats, enabling seamless listing and auctioning of our NFTs. To make these products accessible to the public, the &quot;Marketplace&quot; smart contract must be deployed as a transaction on the selected blockchain network. As an illustration, I have deployed the &quot;SAIT NFT&quot; marketplace on the Goerli network, which serves as a testing blockchain network for developers on Ethereum. Consequently, any participant on this blockchain network gains visibility into my NFT listings and auctions via the unique address &quot;0x75B9cb48afE6D68Dc4ed40e79741eA8Ca71AC02d&quot; associated with the NFT &quot;Marketplace.&quot;</li>
+            <li class="mb-2">Additionally, I have utilized the &quot;NFT Collection&quot; smart contract to group NFTs for selling or auctioning purposes. These collections serve as another type of smart contract on the blockchain network. As an example, I have introduced the &quot;VisualCommunication&quot; NFT collection within the marketplace to showcase my assets from the Visual Communication assignments. Ownership of these NFTs is attributed to specific account addresses, which will be elaborated on in a subsequent section.</li>
             <li class="">Embracing NFTs and blockchain technology, owners of graphic design assets now enjoy unparalleled accessibility to potential buyers, with robust digital ownership protection. Most notably, this technology significantly reduces the total cost of ownership required to set up an eCommerce platform, thereby offering considerable advantages to small startup graphic design companies and freelancers alike.</li>
         </ol>
         <p class="mb-4">
@@ -260,7 +260,7 @@ const ProjectItem = ({item}) => {
     <h2 class="text-2xl font-bold mb-4">Final Version</h2>
     <p class="text-gray-700 mb-8">
         The final version of the WordPress theme closely resembled the official Shangri-La resort hotel website,
-        with similar color schemes and web layouts.
+        with similar colour schemes and web layouts.
     </p>
 
     <h2 class="text-2xl font-bold mb-4">Pain Points / Challenges</h2>
@@ -291,7 +291,6 @@ const ProjectItem = ({item}) => {
     <p class="mt-2">All programming and design work are done by George Cheng.</p>
     <p>Photographs by Easa Shamih, Raj Deutunder, and Paryitno under a Creative Commons Attribution 2.0 Generic (CC BY 2.0) license</p>
 </div>
-
     ):(null)
     }
     {item == 'microservices' ? (
@@ -305,7 +304,7 @@ const ProjectItem = ({item}) => {
 
     <h2 class="text-xl font-bold mb-4">My Role:</h2>
     <p class="mb-4">As a Consulting IT Specialist, I spearheaded the design and development of a comprehensive
-    workshop platform. This platform facilitated skill transfers to over 50 business partners and select customers,
+    workshop platform. This platform facilitated skill transfers to over 50 business partners and enterprises,
     enabling them to harness the potential of containerized workload technology from IBM and prominent open-source
     projects.</p>
 
@@ -321,8 +320,9 @@ const ProjectItem = ({item}) => {
         Delivery (CI/CD) are seamlessly integrated to streamline the development process.</li>
     <li class="mb-2">AIOps for Availability and Capacity Planning: The solution includes AIOPs (Artificial
         Intelligence for IT Operations) solutions to ensure high availability and robust capacity planning.</li>
-    <li class="mb-2">Robot Shop Microservices Application: The project employs the Robot Shop microservices
-        application comprising various components, including front-end, Nginx (reverse proxy), user module, product
+    <li class="mb-2">Robot Shop Microservices Application: In this workshop platform, I choose a microservices 
+        application called "Robot Shop".
+        This application comprising various components, including front-end, Nginx (reverse proxy), user module, product
         catalogue, rating module, shopping cart, payment, and shipment modules. Each component runs in its own CRIO
         container on the RedHat OpenShift platform, an enterprise-grade Kubernetes solution. While most databases run
         on the Kubernetes cluster, payment and shipping databases are hosted on traditional VM server farms.</li>
@@ -349,21 +349,20 @@ const ProjectItem = ({item}) => {
     <p class="text-center italic text-gray-600">By successfully implementing this microservices architecture,
     cloud-native platform, and DevSecOps approach, this project has empowered IBM business partners and customers to
     embrace containerized technologies for a more resilient and innovative modernization journey.</p>
-    <p class="mb-0">
-        <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/devsecops.git" target="_blank">https://github.com/zerospeedzero/devsecops.git</a>
+    <p class="mb-0 mt-8">
+        <strong>Source code and full workshop documentation:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/devsecops.git" target="_blank">https://github.com/zerospeedzero/devsecops.git</a>
     </p>
     <p class="mt-2">All programming and design work are done by George Cheng.</p>
 </div>
         ):(null)
     }
     {item == 'monopoly' ? (
-
 <div class="container mx-auto p-6">
     <h1 class="text-2xl font-semibold mb-4">Modern E-Learning Platform for Monopoly Game Skill Transfer</h1>
     <div class="">
         <h2 class="text-xl font-semibold mb-4">Overview:</h2>
-        <p>The primary objective of this project is to develop an advanced e-learning platform tailored to young
-            professionals, our predominant target demographic. The platform aims to impart comprehensive skill
+        <p>The primary objective of our project is to develop an advanced e-learning platform tailored to young
+            professionals, our predominant target demographic. This platform aims to impart comprehensive skill
             transfer in the domain of the Monopoly game. Our solution is centered around delivering the following
             core values:</p>
         <ul class="list-disc list-inside pl-0 mt-2">
@@ -371,12 +370,14 @@ const ProjectItem = ({item}) => {
                 Monopoly games.</li>
             <li class="mb-1">Foundational Proficiency: Deliver foundational expertise, enabling beginners to
                 initiate gameplay confidently with peers and family.</li>
-            <li class="mb-1">Strategic Mastery: Present advanced modules designed to educate students on tactical
+            <li class="mb-1">Strategic Mastery: Present advanced modules designed to educate users on tactical
                 nuances, enhancing their probability of success.</li>
             <li class="mb-1">Variation Awareness: Provide an expansive repository of knowledge about diverse
                 iterations of Monopoly games.</li>
-            <li class="mb-1">Progress Monitoring: Implement a systematic progression monitoring mechanism to track
+            <li class="mb-1">Progress Monitoring: I implemented a systematic progression monitoring mechanism to track
                 student learning journeys.</li>
+            <li class="mb-1">Game practice: I made use of Open Source project to develop an online version of the classic Monopoly game that users can play against a computer opponent, which uses smart decision-making strategies.</li>
+            <li class="mb-1">Generative Pre-training Transformer (GPT): I took information from our website and past documents and uses them to create a embedding with LangChain and OpenAI that can have conversations with our users.</li>
         </ul>
     </div>
     <div class="mt-4">
@@ -384,10 +385,10 @@ const ProjectItem = ({item}) => {
         <p className="ml-4">As the sole IT solution architect and implementer, I undertake the strategic design and execution of
             this web-based e-learning solution. Additionally, I hold the responsibility for the User Interface (UI)
             and User Experience (UX) design. My role encompasses seamless integration with external systems to
-            facilitate optimal service delivery to our students.</p>
+            facilitate optimal service delivery to our users.</p>
     </div>
     <div class="mt-4">
-        <h2 class="text-xl font-semibold mb-4">Technology Utilization and Functionality:</h2>
+        <h2 class="text-xl font-semibold mb-4">Technology and Functionality:</h2>
         <ol class="list-decimal list-inside pl-0 mt-2">
             <li class="mb-1"><strong>Next JS:</strong> The project harnesses the power of the Next JS framework,
                 serving as the foundation for the e-learning platform's structure.</li>
@@ -402,21 +403,23 @@ const ProjectItem = ({item}) => {
                 seamlessly incorporated into the e-learning solution. Tailored embedding techniques ensure a
                 harmonious convergence of content creation and website development, optimizing project
                 efficiency.</li>
-            <li class="mb-1"><strong>Quizzes:</strong> In-depth quizzes accompany each training module. Student
+            <li class="mb-1"><strong>Quizzes:</strong> In-depth quizzes accompany each training module. Users
                 advancement hinges on successful quiz completion, thereby ensuring a comprehensive understanding
                 before progressing.</li>
             <li class="mb-1"><strong>AI-Powered Monopoly Practice:</strong> An AI-driven Monopoly practice game,
-                built upon an open-source foundation, assesses student skills. Modifications to the AI's decision
+                built upon an open-source foundation, assesses user skills. Modifications to the AI's decision
                 tree enhance its decision-making capabilities, such as recalibrating the "GO" slot rule to retain a
                 minimum of $100.</li>
-            <li class="mb-1"><strong>Knowledge Consolidation with GPT Integration:</strong> Training materials,
-                along with client brief and module content, are synthesized into a unified document. Through
-                LangChain and OpenAI, this data is segmented into 1000 tokens (with 200 tokens overlap),
-                subsequently stored in vector stores within Supabase.com. This establishment acts as a repository
-                for long-term memory and internal semantic search, enabling efficient querying. After successfully
-                clearing quizzes, students access GPT capabilities. It serves as a private knowledge base,
-                addressing project-specific queries, which conventional large language models lack expertise in
-                handling, such as identifying project graphic designers.</li>
+            <li class="mb-1"><strong>Knowledge Consolidation with Generative Pre-training Transformer (GPT) Integration:</strong>
+                <ul className='list-disc list-inside pl-0 mt-2'>
+                    <li>Training materials, along with client brief and module content, are synthesized into a unified document for embedding.</li>
+                    <li>Through LangChain and OpenAI text-embedding-ada-002 embedding model (Not GhatGPT), this data is segmented into 1000 tokens (with 200 tokens overlap), 
+                        subsequently stored in vectorstores within Supabase.com. This establishment acts as a repository for long-term memory and internal semantic search, 
+                        enabling efficient querying on our website with natural language understanding response. After successfully clearing quizzes, users access this GPT capabilities.</li> 
+                    <li>It serves as a private knowledge base, addressing project-specific queries, which conventional large language models lack expertise in handling, 
+                        such as identifying project graphic designers. I think using large language model and implementation of private knowledge databases would be the trend of IT industry for coming years.</li>
+                </ul>
+            </li>
         </ol>
     </div>
     <h1 class="text-2xl font-semibold mb-4 mt-8">Project Team Roles</h1>
@@ -483,7 +486,6 @@ const ProjectItem = ({item}) => {
             <div></div>
         ):(null)
     }
-
     </>
   )
 
