@@ -30,12 +30,12 @@ const Contact = () => {
                 <h3 className='text-2xl py-2'>George Cheng</h3>
                 <p>IT Specialist</p>
                 <p className='py-2'>
-                  I am available for freelance or full-time positions. Contact
+                  I am available for discussion on how to solve real world problems. Contact
                   me and let&apos;s talk.
                 </p>
               </div>
               <div>
-                <p className='pt-8'>Connect With Me</p>
+                <p className='pt-4 pb-4'>Connect With Me</p>
                 <div className='flex flex-row justify-center items-center'>
                     <li className='h-[60px] w-[60px] bg-blue-600 text-p2 flex flex-col justify-center items-center m-2 rounded-lg hover:scale-125 duration-500'>
                       <Link className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/george-cheng-1aa2ab134/" target="_blank">

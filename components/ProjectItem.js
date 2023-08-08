@@ -353,11 +353,130 @@ const ProjectItem = ({item}) => {
         <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/devsecops.git" target="_blank">https://github.com/zerospeedzero/devsecops.git</a>
     </p>
     <p class="mt-2">All programming and design work are done by George Cheng.</p>
-    </div>
+</div>
         ):(null)
     }
-    {item == '2' ? (
-            <div></div>
+    {item == 'monopoly' ? (
+
+<div class="container mx-auto p-6">
+    <h1 class="text-2xl font-semibold mb-4">Modern E-Learning Platform for Monopoly Game Skill Transfer</h1>
+    <div class="">
+        <h2 class="text-xl font-semibold mb-4">Overview:</h2>
+        <p>The primary objective of this project is to develop an advanced e-learning platform tailored to young
+            professionals, our predominant target demographic. The platform aims to impart comprehensive skill
+            transfer in the domain of the Monopoly game. Our solution is centered around delivering the following
+            core values:</p>
+        <ul class="list-disc list-inside pl-0 mt-2">
+            <li class="mb-1">Engagement Generation: Create an intrinsic allure among the target audience for
+                Monopoly games.</li>
+            <li class="mb-1">Foundational Proficiency: Deliver foundational expertise, enabling beginners to
+                initiate gameplay confidently with peers and family.</li>
+            <li class="mb-1">Strategic Mastery: Present advanced modules designed to educate students on tactical
+                nuances, enhancing their probability of success.</li>
+            <li class="mb-1">Variation Awareness: Provide an expansive repository of knowledge about diverse
+                iterations of Monopoly games.</li>
+            <li class="mb-1">Progress Monitoring: Implement a systematic progression monitoring mechanism to track
+                student learning journeys.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <h2 class="text-xl font-semibold mb-4">Role:</h2>
+        <p className="ml-4">As the sole IT solution architect and implementer, I undertake the strategic design and execution of
+            this web-based e-learning solution. Additionally, I hold the responsibility for the User Interface (UI)
+            and User Experience (UX) design. My role encompasses seamless integration with external systems to
+            facilitate optimal service delivery to our students.</p>
+    </div>
+    <div class="mt-4">
+        <h2 class="text-xl font-semibold mb-4">Technology Utilization and Functionality:</h2>
+        <ol class="list-decimal list-inside pl-0 mt-2">
+            <li class="mb-1"><strong>Next JS:</strong> The project harnesses the power of the Next JS framework,
+                serving as the foundation for the e-learning platform's structure.</li>
+            <li class="mb-1"><strong>Motion Framer:</strong> The integration of Motion Framer infuses the platform
+                with dynamic web-based animations, amplifying the overall user experience during training
+                sessions.</li>
+            <li class="mb-1"><strong>YouTube API:</strong> To enhance the learning experience, the platform leverages
+                the YouTube API. This allows us to exert control over video playback, facilitating topic-specific
+                navigation within video training modules. Moreover, the API enables tracking of video completion,
+                crucial for module progression.</li>
+            <li class="mb-1"><strong>Slides.com:</strong> Our training materials, designed on slides.com, are
+                seamlessly incorporated into the e-learning solution. Tailored embedding techniques ensure a
+                harmonious convergence of content creation and website development, optimizing project
+                efficiency.</li>
+            <li class="mb-1"><strong>Quizzes:</strong> In-depth quizzes accompany each training module. Student
+                advancement hinges on successful quiz completion, thereby ensuring a comprehensive understanding
+                before progressing.</li>
+            <li class="mb-1"><strong>AI-Powered Monopoly Practice:</strong> An AI-driven Monopoly practice game,
+                built upon an open-source foundation, assesses student skills. Modifications to the AI's decision
+                tree enhance its decision-making capabilities, such as recalibrating the "GO" slot rule to retain a
+                minimum of $100.</li>
+            <li class="mb-1"><strong>Knowledge Consolidation with GPT Integration:</strong> Training materials,
+                along with client brief and module content, are synthesized into a unified document. Through
+                LangChain and OpenAI, this data is segmented into 1000 tokens (with 200 tokens overlap),
+                subsequently stored in vector stores within Supabase.com. This establishment acts as a repository
+                for long-term memory and internal semantic search, enabling efficient querying. After successfully
+                clearing quizzes, students access GPT capabilities. It serves as a private knowledge base,
+                addressing project-specific queries, which conventional large language models lack expertise in
+                handling, such as identifying project graphic designers.</li>
+        </ol>
+    </div>
+    <h1 class="text-2xl font-semibold mb-4 mt-8">Project Team Roles</h1>
+    <strong class="">
+        Project Leader (George Cheng)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for deliverables planning and updating, process control, and project management.
+    </p>
+    <strong class="">
+        Graphic Design (Yan Lok Yuen)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for colour, typographic, graphic, 3D and VR design.
+    </p>
+    <strong class="">
+        Programming (George Cheng)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for website building, solution architecture, technologies deployed and technical support.
+    </p>
+    <strong class="">
+        Content Writer (Ryan Ngo)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for content writing for the beginner module.
+    </p>
+    <strong class="">
+        Content Writer (Danny Ha)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for content writing for the tactics module.
+    </p>
+    <strong class="">
+        Content Writer (Jake Morin)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for content writing for the various versions of the Monopoly module.
+    </p>
+    <strong class="">
+        Writer and Visual Assistant (Jimmy Chan)
+    </strong>
+    <p class="mb-8 ml-4">
+        Responsible for the introduction and history of Monopoly writing and assisting other teammates with visual
+        creation. Also, he is responsible for all 3D model creation.
+    </p>
+    <h1 class="text-2xl font-semibold mb-4 mt-8">Resources</h1>
+    <p class="mt-4 mb-4">
+        The website has employed technologies provided by Microsoft Azure Cloud, YouTube API, Slides.com embedding, LangChain, OpenAI, Vectorstores and NextJS framework.
+    </p>
+    <p class="mb-4">
+            <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://sait-monopoly.azurewebsites.net/" target="_blank">https://sait-monopoly.azurewebsites.net/</a>
+    </p>
+    <p class="mb-4">
+        <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/monopoly.mp4" target="_blank">monopoly.mp4</a>
+    </p>
+    <p class="mb-4">
+        <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/monopoly" target="_blank">https://github.com/zerospeedzero/monopoly</a>
+    </p>
+</div>
         ):(null)
     }
     {item == '4' ? (

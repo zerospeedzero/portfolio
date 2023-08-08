@@ -76,6 +76,7 @@ const Project = () => {
   const projects = [
     {name: 'Microservices', html:  'microservices', image: '/assets/projects/microservices.gif'},
     {name: 'NFT SAIT marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
+    {name: 'AI GPT - Monopoly', html:  'monopoly', image: '/assets/projects/monopoly.gif', video: '/assets/projects/monopoly.mp4'},
     {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
     {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
