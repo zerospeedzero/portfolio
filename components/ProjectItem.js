@@ -321,7 +321,7 @@ const ProjectItem = ({item}) => {
     <li class="mb-2">AIOps for Availability and Capacity Planning: The solution includes AIOPs (Artificial
         Intelligence for IT Operations) solutions to ensure high availability and robust capacity planning.</li>
     <li class="mb-2">Robot Shop Microservices Application: In this workshop platform, I choose a microservices 
-        application called "Robot Shop".
+        application called &quot;Robot Shop&quot;.
         This application comprising various components, including front-end, Nginx (reverse proxy), user module, product
         catalogue, rating module, shopping cart, payment, and shipment modules. Each component runs in its own CRIO
         container on the RedHat OpenShift platform, an enterprise-grade Kubernetes solution. While most databases run
@@ -391,7 +391,7 @@ const ProjectItem = ({item}) => {
         <h2 class="text-xl font-semibold mb-4">Technology and Functionality:</h2>
         <ol class="list-decimal list-inside pl-0 mt-2">
             <li class="mb-1"><strong>Next JS:</strong> The project harnesses the power of the Next JS framework,
-                serving as the foundation for the e-learning platform's structure.</li>
+                serving as the foundation for the e-learning platform&apos;s structure.</li>
             <li class="mb-1"><strong>Motion Framer:</strong> The integration of Motion Framer infuses the platform
                 with dynamic web-based animations, amplifying the overall user experience during training
                 sessions.</li>
@@ -407,8 +407,8 @@ const ProjectItem = ({item}) => {
                 advancement hinges on successful quiz completion, thereby ensuring a comprehensive understanding
                 before progressing.</li>
             <li class="mb-1"><strong>AI-Powered Monopoly Practice:</strong> An AI-driven Monopoly practice game,
-                built upon an open-source foundation, assesses user skills. Modifications to the AI's decision
-                tree enhance its decision-making capabilities, such as recalibrating the "GO" slot rule to retain a
+                built upon an open-source foundation, assesses user skills. Modifications to the AI&apos;s decision
+                tree enhance its decision-making capabilities, such as recalibrating the &quot;GO&quot; slot rule to retain a
                 minimum of $100.</li>
             <li class="mb-1"><strong>Knowledge Consolidation with Generative Pre-training Transformer (GPT) Integration:</strong>
                 <ul className='list-disc list-inside pl-0 mt-2'>
