@@ -5,7 +5,7 @@ const ProjectItem = ({item}) => {
     <>
     {item == 'fishcreek' ? (
 <div className="container mx-auto p-4">
-  <h3 class="text-2xl semi-bold mb-4">Overview</h3>
+  <h1 class="text-2xl semi-bold mb-4">Overview</h1>
   <p class="mb-4">
       I designed and implemented an Interactive map solution in the third semester. It is a group project, and I
       am the one and only one who did all the program development and UX/UI design work (except the Google map
@@ -108,13 +108,13 @@ const ProjectItem = ({item}) => {
             The website has employed technologies provided by Microsoft Azure Cloud.
         </p>
         <p class="mb-4">
-            <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://gentle-field-08583d510.3.azurestaticapps.net/" target="_blank">https://gentle-field-08583d510.3.azurestaticapps.net/</a>
+            <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://gentle-field-08583d510.3.azurestaticapps.net/" target="_blank">Web demo</a>
         </p>
         <p class="mb-4">
             <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/nft.mp4" target="_blank">/assets/projects/nft.mp4</a>
         </p>
         <p class="mb-0">
-            <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/sait-blockchain.git" target="_blank">https://github.com/zerospeedzero/sait-blockchain.git</a>
+            <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/sait-blockchain.git" target="_blank">sait-blockchain.git</a>
         </p>
         <p class="mt-2">All work is done by George Cheng.</p>
         <p class="mt-2"><em>Note: You need to have a digital wallet on your computer in order to connect to the NFT Blockchain.</em></p>
@@ -214,7 +214,7 @@ const ProjectItem = ({item}) => {
     ):(null)
     }
     {item == 'shangri-la' ? (
-<div class="container mx-auto p-6">
+<div class="container mx-auto p-4">
     <h1 class="text-4xl semi-bold mb-6">Case Study: Shangri-La Resort WordPress Theme</h1>
 
     <h2 class="text-2xl semi-bold mb-4">Overview</h2>
@@ -294,7 +294,7 @@ const ProjectItem = ({item}) => {
     ):(null)
     }
     {item == 'microservices' ? (
-<div class=" p-6 rounded-lg">
+<div class="container mx-auto p-4">
     <h1 class="text-2xl semi-bold">Microservices Architecture, Cloud-Native Platform, and DevSecOps</h1>
     <p class="text-lg font-medium mb-6">Empowering IBM Partners and Customers</p>    
     <h2 class="text-xl semi-bold mb-4">Background:</h2>
@@ -357,7 +357,7 @@ const ProjectItem = ({item}) => {
         ):(null)
     }
     {item == 'monopoly' ? (
-<div class="container mx-auto p-6">
+<div class="container mx-auto p-4">
     <h1 class="text-2xl font-semibold mb-4">Modern E-Learning Platform for Monopoly Game Skill Transfer</h1>
     <div class="">
         <h2 class="text-xl font-semibold mb-4">Overview:</h2>
@@ -483,7 +483,7 @@ const ProjectItem = ({item}) => {
         ):(null)
     }
     {item == 'private' ? (
-    <div class="p-4">
+<div class="container mx-auto p-4">
     <h1 class="text-2xl semi-bold mb-4">Private Cloud Project</h1>
     <h2 class="text-xl semi-bold  mb-2">Background</h2>
     <p class="mb-4">As a specialist in private cloud solutions with expertise in Kubernetes and OpenShift, I was tasked with showcasing the capabilities of our <strong>private native cloud platform</strong> to a banking client. The primary objectives were to enhance the agility of their mobile app platform and kickstart their first pilot project using container technology. We were selected as one of the three vendors for this <strong>competitive opportunity</strong>.</p>
@@ -521,7 +521,7 @@ const ProjectItem = ({item}) => {
         ):(null)
     }
     {item == 'pipeline' ? (
-<div class="p-4 ">
+<div class="container mx-auto p-4">
     <h1 class="text-2xl semi-bold mb-4">Establishment of a robust DevOps toolset for an insurance client</h1>
     <h2 class="text-xl semi-bold mb-2">Background and my role</h2>
     <p class="mb-4">In this initiative, the goal was to create a robust <strong>DevOps toolset</strong> and a streamlined pipeline framework to enable efficient deployment of containerized software for our insurance client. The client had already made tool selections, and my role involved assisting them in the implementation of these tools within their Proof of Concept (POC) environment. To demonstrate the toolchain&apos;s effectiveness while maintaining confidentiality, I utilized a separate application for illustrative purposes.</p>
