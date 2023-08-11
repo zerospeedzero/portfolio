@@ -30,7 +30,7 @@ const Contact = () => {
                 <h3 className='text-2xl py-2'>George Cheng</h3>
                 <p>IT Specialist</p>
                 <p className='py-2'>
-                  I am available for discussion on how to solve real world problems. Contact
+                  I am available for discussion on how to solve problems using information technology. Contact
                   me and let&apos;s talk.
                 </p>
               </div>

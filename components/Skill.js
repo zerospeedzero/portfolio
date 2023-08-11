@@ -2,8 +2,20 @@ import React from 'react'
 import Image from 'next/image'
 import { motion, useScroll } from "framer-motion"
 import {SiAnsible} from 'react-icons/si'
+import { useState, useEffect } from 'react'
 
 const Skill = () => {
+  const [isMobile, setMobile] = useState(false);
+  useEffect(() => {
+    const userAgent =
+      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile = Boolean(
+      userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+      )
+    );
+    setMobile(mobile);
+  }, []);    
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -43,21 +55,39 @@ const Skill = () => {
           <p className='text-4xl inline border-b-4 border-pink-400 '>Skills</p>
           <p className='py-8'>There are the technologies I have worked with recently</p>
         </div>
-        <motion.div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-0'
+        {isMobile ? (
+          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-0'
           variants={container} initial="hidden" whileInView="visible"
-        >
-          {skills.map((skill, index) => (
-            <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/20 text-s1 rounded-xl p-4'
-              variants={item}
-            >
-              {/* <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/> */}
-              <motion.img width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}
-                whileHover={{scale: 1.1,}}   transition={{duration: 1, type: "spring", stiffness: 400, damping: 10 }}
-              />
-              <p className='mt-2 text-lg font-bold'>{skill.name}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+          >
+            {skills.map((skill, index) => (
+              <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/20 text-s1 rounded-xl p-4'
+                variants={item}
+              >
+                {/* <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/> */}
+                <motion.img width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}
+                  whileHover={{scale: 1.1,}}   transition={{duration: 1, type: "spring", stiffness: 400, damping: 10 }}
+                />
+                <p className='mt-2 text-lg font-bold'>{skill.name}</p>
+              </motion.div>
+            ))}
+          </div>
+        ) : (
+          <motion.div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-0'
+            variants={container} initial="hidden" whileInView="visible"
+          >
+            {skills.map((skill, index) => (
+              <motion.div key={index} className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-white/20 text-s1 rounded-xl p-4'
+                variants={item}
+              >
+                {/* <Image width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}/> */}
+                <motion.img width="100" height="100" className='w-40 h-40 mx-auto rounded-lg' alt={skill.name} src={skill.image}
+                  whileHover={{scale: 1.1,}}   transition={{duration: 1, type: "spring", stiffness: 400, damping: 10 }}
+                />
+                <p className='mt-2 text-lg font-bold'>{skill.name}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
       </div>
     </div>
   )

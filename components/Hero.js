@@ -48,7 +48,7 @@ const Hero = () => {
         <motion.p className='text-p2 py-4 max-w-[50rem]'
           initial={{scale:0, opacity: 0}} animate={{scale:1, opacity:1}} transition={{duration: 1, delay: 0.7}}
         >
-          I am a IT expert specializing in building and designing exceptional digital experiences. Currently, I am focused on building microservice architecture, DevSecOps, AIOps and Web 3.0 solutions.
+          I am an IT expert specializing in building and designing exceptional digital experiences. Currently, I am focused on building microservice architecture, DevSecOps, AIOps and Web 3.0 solutions.
         </motion.p>
         <motion.div className='mt-8'
           initial={{scale:0, opacity: 1}} animate={{rotate: 360, scale:1, opacity:1}} transition={{type: 'spring',duration: 2, delay: 2}} 

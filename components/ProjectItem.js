@@ -5,7 +5,7 @@ const ProjectItem = ({item}) => {
     <>
     {item == 'fishcreek' ? (
 <div className="container mx-auto p-4">
-  <h3 class="text-2xl font-bold mb-4">Overview</h3>
+  <h3 class="text-2xl semi-bold mb-4">Overview</h3>
   <p class="mb-4">
       I designed and implemented an Interactive map solution in the third semester. It is a group project, and I
       am the one and only one who did all the program development and UX/UI design work (except the Google map
@@ -55,7 +55,7 @@ const ProjectItem = ({item}) => {
       best practices.
   </p>
   <p class="mb-4">
-        <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://fish-creek.azurewebsites.net" target="_blank">https://fish-creek.azurewebsites.net</a>
+        <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://green-ocean-09524b910.3.azurestaticapps.net/" target="_blank">https://green-ocean-09524b910.3.azurestaticapps.net/</a>
   </p>
   <p class="mb-4">
       <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/fishcreek.mp4" target="_blank">fishcreek.mp4</a>
@@ -68,7 +68,7 @@ const ProjectItem = ({item}) => {
     }    
     {item == 'nft' ? (
 <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-bold mb-4">Overview</h1>
+        <h1 class="text-2xl semi-bold mb-4">Overview</h1>
         <p class="mb-4">
             I designed and implemented an NFT marketplace and a collection for SAIT NMPD classmates in the first semester. I
             targeted to demonstrate the values of blockchain networking using NFT as an example. The following are the major
@@ -97,7 +97,7 @@ const ProjectItem = ({item}) => {
             </li>
         </ol>
 
-        <h2 class="text-2xl font-bold mb-4">NFT SAIT marketplace</h2>
+        <h2 class="text-2xl semi-bold mb-4">NFT SAIT marketplace</h2>
         <ol class="list-decimal list-inside mb-4">
             <li class="mb-2">In this cutting-edge project, I have developed a Web 3.0 application hosted on the Azure Cloud platform, providing a curated listing of my exclusive NFT products. My NFT graphic products showcase the exceptional work from the Visual Communication and Web Communication courses.</li>
             <li class="mb-2">Central to this application are two pre-defined smart contracts: &quot;Marketplace&quot; and &quot;NFT Collection.&quot; The &quot;Marketplace&quot; smart contract supports NFTs in both ERC721 and ERC1155 formats, enabling seamless listing and auctioning of our NFTs. To make these products accessible to the public, the &quot;Marketplace&quot; smart contract must be deployed as a transaction on the selected blockchain network. As an illustration, I have deployed the &quot;SAIT NFT&quot; marketplace on the Goerli network, which serves as a testing blockchain network for developers on Ethereum. Consequently, any participant on this blockchain network gains visibility into my NFT listings and auctions via the unique address &quot;0x75B9cb48afE6D68Dc4ed40e79741eA8Ca71AC02d&quot; associated with the NFT &quot;Marketplace.&quot;</li>
@@ -123,7 +123,7 @@ const ProjectItem = ({item}) => {
     }  
     {item == 'ec' ? (
 <div class="container mx-auto p-4">
-    <h1 class="text-4xl font-bold mb-4">Overview</h1>
+    <h1 class="text-4xl semi-bold mb-4">Overview</h1>
     <p class="mb-4">
         I designed and implemented an eCommerce website in the second semester. Following are the functions and features of this eCommerce website.
     </p>
@@ -175,7 +175,7 @@ const ProjectItem = ({item}) => {
     }
     {item == 'secret' ? (
 <div class="container mx-auto p-4">
-    <h1 class="text-4xl font-bold mb-4">Overview</h1>
+    <h1 class="text-4xl semi-bold mb-4">Overview</h1>
     <p class="mb-4">
         I&apos;ve developed a website that safeguards a secret message, requiring successful authentication for access. Following are the functions and features of this website.
     </p>
@@ -215,16 +215,16 @@ const ProjectItem = ({item}) => {
     }
     {item == 'shangri-la' ? (
 <div class="container mx-auto p-6">
-    <h1 class="text-4xl font-bold mb-6">Case Study: Shangri-La Resort WordPress Theme</h1>
+    <h1 class="text-4xl semi-bold mb-6">Case Study: Shangri-La Resort WordPress Theme</h1>
 
-    <h2 class="text-2xl font-bold mb-4">Overview</h2>
+    <h2 class="text-2xl semi-bold mb-4">Overview</h2>
     <p class="text-gray-700 mb-8">
         The objective of this case study was to create a customized WordPress theme for the Shangri-La resort,
         enhancing its visual appeal and modernizing its web interface while maintaining the existing layout and
         data of the website.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Inspirations and Research</h2>
+    <h2 class="text-2xl semi-bold mb-4">Inspirations and Research</h2>
     <p class="text-gray-700 mb-8">
         To achieve the project&apos;s goals, a thorough analysis was conducted by visiting the official website of
         Shangri-La. This involved studying the colour theory, tuning, and underlying technology utilized on the
@@ -232,13 +232,13 @@ const ProjectItem = ({item}) => {
         customers through the web interface.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Role</h2>
+    <h2 class="text-2xl semi-bold mb-4">Role</h2>
     <p class="text-gray-700 mb-8">
         The project was led and executed by me with skills in graphic design and web development. The primary
         responsibility was the development of the WordPress theme module.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Planning Milestones</h2>
+    <h2 class="text-2xl semi-bold mb-4">Planning Milestones</h2>
     <ul class="list-disc list-inside text-gray-700 mb-8">
         <li>Definition of Key Performance Indicators (KPIs) and mission-critical success factors to guide
             project evaluation.</li>
@@ -251,29 +251,29 @@ const ProjectItem = ({item}) => {
         <li>Project kick-off and final submission of the completed WordPress theme.</li>
     </ul>
 
-    <h2 class="text-2xl font-bold mb-4">Two Draft Versions of the Web Layout with Colour Combination</h2>
+    <h2 class="text-2xl semi-bold mb-4">Two Draft Versions of the Web Layout with Colour Combination</h2>
     <p class="text-gray-700 mb-8">
         Initial draft versions of the web layout were developed, showcasing the proposed colour combinations and
         design elements.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Final Version</h2>
+    <h2 class="text-2xl semi-bold mb-4">Final Version</h2>
     <p class="text-gray-700 mb-8">
         The final version of the WordPress theme closely resembled the official Shangri-La resort hotel website,
         with similar colour schemes and web layouts.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Pain Points / Challenges</h2>
+    <h2 class="text-2xl semi-bold mb-4">Pain Points / Challenges</h2>
     <ul class="list-disc list-inside text-gray-700 mb-8">
         <li>Restriction on modifying existing data and data relationships, necessitating the retention and
             seamless migration of existing authors and their posts to the new modern solution.</li>
         <li>Non-containerized web element data provided by WordPress, such as headings, images, and paragraphs for
-            posts, requiring meticulous styling to address the lack of HTML element grouping.</li>
+            posts, require meticulous styling to address the lack of HTML element grouping.</li>
         <li>Limited functionality with only theming modules, resulting in partial web page reloads during page
             switching, which negatively impacted user experience when compared to modern JavaScript frameworks.</li>
     </ul>
 
-    <h2 class="text-2xl font-bold mb-4">Call-to-Action</h2>
+    <h2 class="text-2xl semi-bold mb-4">Call-to-Action</h2>
     <p class="text-gray-700 mb-8">
         Despite the aforementioned constraints, the project successfully addressed these challenges, and the
         required WordPress theme modules were developed, significantly enhancing the overall modernity of the
@@ -288,39 +288,39 @@ const ProjectItem = ({item}) => {
     <p class="mb-0">
         <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/shangri-la.git" target="_blank">https://github.com/zerospeedzero/shangri-la.git</a>
     </p>
-    <p class="mt-2">All programming and design work are done by George Cheng.</p>
+    <p class="mt-2">All programming and design work is done by George Cheng.</p>
     <p>Photographs by Easa Shamih, Raj Deutunder, and Paryitno under a Creative Commons Attribution 2.0 Generic (CC BY 2.0) license</p>
 </div>
     ):(null)
     }
     {item == 'microservices' ? (
 <div class=" p-6 rounded-lg">
-    <h1 class="text-2xl font-bold">Microservices Architecture, Cloud-Native Platform, and DevSecOps</h1>
+    <h1 class="text-2xl semi-bold">Microservices Architecture, Cloud-Native Platform, and DevSecOps</h1>
     <p class="text-lg font-medium mb-6">Empowering IBM Partners and Customers</p>    
-    <h2 class="text-xl font-bold mb-4">Background:</h2>
-    <p class="mb-4">Initiated in 2022, this transformative project aimed to empower IBM business partners with
-    containerized technologies offered by IBM solutions and facilitate IBM customers in their modernization journey
-    through hands-on workshops.</p>
+    <h2 class="text-xl semi-bold mb-4">Background:</h2>
+    <p class="mb-4">Initiated in 2022, this transformative project aimed to empower IBM business partners with 
+    <strong> containerized technologies</strong> offered by IBM solutions and facilitate IBM customers in their modernization journey
+    through <strong>hands-on workshops</strong>.</p>
 
-    <h2 class="text-xl font-bold mb-4">My Role:</h2>
+    <h2 class="text-xl semi-bold mb-4">My Role:</h2>
     <p class="mb-4">As a Consulting IT Specialist, I spearheaded the design and development of a comprehensive
-    workshop platform. This platform facilitated skill transfers to over 50 business partners and enterprises,
+    workshop platform. This platform facilitated skill transfers to over <strong>50 business partners and enterprises</strong>,
     enabling them to harness the potential of containerized workload technology from IBM and prominent open-source
     projects.</p>
 
-    <h2 class="text-xl font-bold mb-4">Benefits and Content of the Solution:</h2>
+    <h2 class="text-xl semi-bold mb-4">Benefits and Content of the Solution:</h2>
     <ol class="list-decimal list-inside mb-4">
-    <li class="mb-2">Agile Business Solutions: The adoption of microservices architecture grants customers the
+    <li class="mb-2"><strong>Agile Business</strong> Solutions: The adoption of microservices architecture grants customers the
         ability to respond rapidly to dynamic market demands, enhancing their IT solutions&apos; business agility.</li>
-    <li class="mb-2">Cloud-Native Efficiency: Leveraging cloud-native applications results in improved operational
+    <li class="mb-2"><strong>Cloud-Native</strong> Efficiency: Leveraging cloud-native applications results in improved operational
         efficiency and cost-effectiveness across diverse cloud environments. Containerized applications can be
         seamlessly migrated to different cloud platforms.</li>
-    <li class="mb-2">Efficient CI/CD Integration: To support application enhancement and bug fixing efficiently, the
+    <li class="mb-2">Efficient <strong>CI/CD</strong> Integration: To support application enhancement and bug fixing efficiently, the
         architecture incorporates technology from leading open-source vendors. Continuous Integration and Continuous
         Delivery (CI/CD) are seamlessly integrated to streamline the development process.</li>
-    <li class="mb-2">AIOps for Availability and Capacity Planning: The solution includes AIOPs (Artificial
+    <li class="mb-2"><strong>AIOps</strong> for Availability and Capacity Planning: The solution includes AIOPs (Artificial
         Intelligence for IT Operations) solutions to ensure high availability and robust capacity planning.</li>
-    <li class="mb-2">Robot Shop Microservices Application: In this workshop platform, I choose a microservices 
+    <li class="mb-2">Robot Shop <strong>Microservices</strong> Application: In this workshop platform, I choose a microservices 
         application called &quot;Robot Shop&quot;.
         This application comprising various components, including front-end, Nginx (reverse proxy), user module, product
         catalogue, rating module, shopping cart, payment, and shipment modules. Each component runs in its own CRIO
@@ -328,21 +328,21 @@ const ProjectItem = ({item}) => {
         on the Kubernetes cluster, payment and shipping databases are hosted on traditional VM server farms.</li>
     </ol>
 
-    <h2 class="text-xl font-bold mb-4">Technology Deployed in the Workshop:</h2>
+    <h2 class="text-xl semi-bold mb-4">Technology Deployed in the Workshop:</h2>
     <ol class="list-decimal list-inside mb-4">
-    <li class="mb-2">RedHat OpenShift: The Kubernetes platform serves as a host and manager for containerized
+    <li class="mb-2">RedHat OpenShift: The <strong>Kubernetes</strong> platform serves as a host and manager for containerized
         applications.</li>
-    <li class="mb-2">VMware Environment: Traditional databases are hosted on VMware, providing reliable data
+    <li class="mb-2"><strong>VMware</strong> Environment: Traditional databases are hosted on VMware, providing reliable data
         storage.</li>
-    <li class="mb-2">GitLab Ultimate: This platform handles source code control, CICD integration, containerized
+    <li class="mb-2"><strong>GitLab</strong> Ultimate: This platform handles source code control, CICD integration, containerized
         application build, code quality control, unit testing triggering, containerized image creation and hosting,
         image security scanning, secret detection, live application security scanning, and deployment to development
         environments.</li>
-    <li class="mb-2">Instana: Observability monitoring of microservices and transaction checking on the instrumented
-        Robot Shop application. It supports a range of technologies, including NodeJS, Springboot, Python, Golang, PHP,
-        MongoDb, Redis, MySQL, RabbitMQ, Nginx, and Angular JS.</li>
-    <li class="mb-2">Turbonomic: A vital component providing application resource management. It employs artificial
-        intelligence to determine application demand and efficiently allocate IT resources on private and public cloud
+    <li class="mb-2"><strong>Instana</strong>: Observability monitoring of microservices and transaction checking on the instrumented
+        Robot Shop application. It supports a range of technologies, including <strong>NodeJS</strong>, <strong>Springboot</strong>, <strong>Python</strong>, <strong>Golang</strong>, 
+         <strong> MongoDb</strong>, <strong>Redis</strong>, <strong>MySQL</strong>, <strong>RabbitMQ</strong>, <strong>Nginx</strong>, and <strong>Angular JS</strong>.</li>
+    <li class="mb-2"><strong>Turbonomic</strong>: A vital component providing application resource management. It employs artificial
+        intelligence to determine application demand and efficiently allocate IT resources in private and public cloud
         environments, ensuring optimal performance and cost-efficiency.</li>
     </ol>
 
@@ -352,7 +352,7 @@ const ProjectItem = ({item}) => {
     <p class="mb-0 mt-8">
         <strong>Source code and full workshop documentation:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/devsecops.git" target="_blank">https://github.com/zerospeedzero/devsecops.git</a>
     </p>
-    <p class="mt-2">All programming and design work are done by George Cheng.</p>
+    <p class="mt-2">All programming and design work is done by George Cheng.</p>
 </div>
         ):(null)
     }
@@ -482,8 +482,82 @@ const ProjectItem = ({item}) => {
 </div>
         ):(null)
     }
-    {item == '4' ? (
-            <div></div>
+    {item == 'private' ? (
+    <div class="p-4">
+    <h1 class="text-2xl semi-bold mb-4">Private Cloud Project</h1>
+    <h2 class="text-xl semi-bold  mb-2">Background</h2>
+    <p class="mb-4">As a specialist in private cloud solutions with expertise in Kubernetes and OpenShift, I was tasked with showcasing the capabilities of our <strong>private native cloud platform</strong> to a banking client. The primary objectives were to enhance the agility of their mobile app platform and kickstart their first pilot project using container technology. We were selected as one of the three vendors for this <strong>competitive opportunity</strong>.</p>
+    
+    <h2 class="text-xl semi-bold  mb-2">My Role</h2>
+    <p class="mb-4">I served as the <strong>solution architect</strong> responsible for designing and implementing the proof of technology environment, analyzing the customer&apos;s cloud journey requirements, delivering a comprehensive presentation and demonstration, providing investment summaries, and facilitating the deal closure by aligning solution components based on precise license calculations.</p>
+    
+    <h2 class="text-xl semi-bold mb-2">The Outcome</h2>
+    <p class="mb-4">During the rigorous selection process, I devised and established an integrated private cloud platform utilizing enterprise-grade Kubernetes solutions and relevant open-source tools already familiar to the client. Our efforts culminated in <strong>securing this valuable opportunity</strong>, and the client has successfully integrated the majority of our recommended products and solutions into their private cloud environment.</p>
+    <h2 class="text-xl semi-bold mb-4">Technology Deployed in the Project:</h2>
+    <ol class="list-decimal list-inside space-y-2">
+            <li class="mb-2">
+                Deployment of <strong>pfSense</strong> Network Alliance: I implemented a virtual security appliance, pfSense Network Alliance, to emulate <strong>network segregation</strong> between the Kubernetes internal cluster network and the production network that serves end users. This strategic deployment enhances security and ensures controlled connectivity.
+            </li>
+            <li class="mb-2">
+                Configuration of <strong>HAProxy</strong> Load Balancer: I orchestrated the setup and customization of an HAProxy server, running on a Red Hat Enterprise Linux (RHEL) server. This HAProxy instance serves as a <strong>load balancer</strong>, efficiently managing traffic for both the Kubernetes cluster network and incoming requests through Ingress.
+            </li>
+            <li class="mb-2">
+                Establishment of <strong>Dedicated DNS and DHCP</strong> Servers for Kubernetes: To support flexible scaling in both vertical and horizontal dimensions, dedicated DNS and DHCP servers were implemented specifically for the Kubernetes environment. This infrastructure includes predefined network card MAC addresses, IP addresses, and DNS names, essential for the <strong>autoscaler</strong> functionality of Red Hat OpenShift.
+            </li>
+            <li class="mb-2">
+                Deployment of Simulated <strong>Certificate Authority</strong> Microservices: I deployed the &quot;EJBCA&quot; Certificate Authority microservices, alongside <strong>Cert Manager</strong>, within this solution. This setup effectively manages the entire lifecycle of certificate management, ensuring secure connections and seamless integration with other IT components. It&apos;s important to note that while this solution serves a demonstration purpose here, it wouldn&apos;t be suitable for a production environment.
+            </li>
+    </ol>
+    <h2 class="text-xl semi-bold my-4">Portfolio Highlights</h2>
+    <p class="mb-4">Due to <strong>confidentiality</strong> and security considerations, I&apos;m unable to disclose the specific and customized technology stacks and the proof-of-technology environment used in this project. However, I&apos;ve prepared an <strong>alternate IT environment</strong> for reference, and I&apos;ll be showcasing the project&apos;s impact using a sample application in lieu of the customer&apos;s proprietary applications.</p>
+    <p class="mb-4">
+        <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/private.mp4" target="_blank">Enterprise Private Cloud</a>
+    </p>
+    <p class="mb-0">
+        <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/private-cloud.git" target="_blank">https://github.com/zerospeedzero/private-cloud.git</a>
+    </p>
+    <p class="mt-2">All programming and design work is done by George Cheng.</p>
+</div>
+        ):(null)
+    }
+    {item == 'pipeline' ? (
+<div class="p-4 ">
+    <h1 class="text-2xl semi-bold mb-4">Establishment of a robust DevOps toolset for an insurance client</h1>
+    <h2 class="text-xl semi-bold mb-2">Background and my role</h2>
+    <p class="mb-4">In this initiative, the goal was to create a robust <strong>DevOps toolset</strong> and a streamlined pipeline framework to enable efficient deployment of containerized software for our insurance client. The client had already made tool selections, and my role involved assisting them in the implementation of these tools within their Proof of Concept (POC) environment. To demonstrate the toolchain&apos;s effectiveness while maintaining confidentiality, I utilized a separate application for illustrative purposes.</p>
+
+    <h2 class="text-xl semi-bold mb-2">Technology Stack Deployed in This Solution</h2>
+    <ul class="list-disc list-inside space-y-2">
+            <li>
+            <strong>Jenkins</strong>: Engine for continuous integration and continuous delivery, providing a reliable automation framework.
+            </li>
+            <li>
+            <strong>GitLab</strong>: Source control management, facilitating efficient version control and collaboration.
+            </li>
+            <li>
+            <strong>Harbor</strong>: Docker image storage registry, ensuring secure and accessible storage of container images.
+            </li>
+            <li>
+            <strong>SonarQube</strong>: Application code security scanning, enhancing code quality and security.
+            </li>
+            <li>
+            <strong>OpenShift</strong> BuildConfig: Trigger for the Jenkins pipeline, automating the deployment process.
+            </li>
+            <li>
+            <strong>Sock Shop</strong>: Microservices application used for demonstration purposes, showcasing the capabilities of the toolset.
+            </li>
+        </ul>
+        <p class="my-4">
+            <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/pipeline.mp4" target="_blank">Open Source Pipeline</a>
+        </p>
+        <p class="mb-4">
+            <strong>Source code:</strong> <a class="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/pipeline.git" target="_blank">https://github.com/zerospeedzero/Pipeline.git</a>
+        </p>
+        <p class="mt-0">All programming and design work is done by George Cheng.</p>
+
+</div>
+
+
         ):(null)
     }
     </>

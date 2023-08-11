@@ -69,19 +69,21 @@ const Project = () => {
       )
     );
     setMobile(mobile);
-  }, []);  
+  }, []);
   const [show, setShow] = useState(false);
   const [play, setPlay] = useState(false);
   const [current, setCurrent] = useState(null);
   const projects = [
     {name: 'Microservices', html:  'microservices', image: '/assets/projects/microservices.gif'},
-    {name: 'NFT SAIT marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
+    {name: 'Enterprise Private Cloud', html:  'private', image: '/assets/projects/private.gif', video: '/assets/projects/private.mp4'},
+    {name: 'Open Source Pipeline', html:  'pipeline', image: '/assets/projects/pipeline.gif', video: '/assets/projects/pipeline.mp4'},
+    {name: 'NFT SAIT Marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
     {name: 'AI GPT - Monopoly', html:  'monopoly', image: '/assets/projects/monopoly.gif', video: '/assets/projects/monopoly.mp4'},
     {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
     {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
     {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/ecommerce.mp4'},
-    {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
+    // {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
   ]
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -102,7 +104,12 @@ const Project = () => {
       y: 0,
       opacity: 1
     }
-  }  
+  }
+  useEffect(() => {
+    show && (document.body.style.overflow = 'hidden');
+    !show && (document.body.style.overflow = 'unset');
+  }, [show ]);
+
   return (
     <div id="project" name="project" className='pt-[100px] min-h-screen'>
       <div className='max-w-[1180px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
