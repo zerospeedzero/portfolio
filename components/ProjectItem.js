@@ -123,7 +123,7 @@ const ProjectItem = ({item}) => {
     }  
     {item == 'ec' ? (
 <div class="container mx-auto p-4">
-    <h1 class="text-4xl semi-bold mb-4">Overview</h1>
+    <h1 class="text-2xl semi-bold mb-4">Overview</h1>
     <p class="mb-4">
         I designed and implemented an eCommerce website in the second semester. Following are the functions and features of this eCommerce website.
     </p>
@@ -175,7 +175,7 @@ const ProjectItem = ({item}) => {
     }
     {item == 'secret' ? (
 <div class="container mx-auto p-4">
-    <h1 class="text-4xl semi-bold mb-4">Overview</h1>
+    <h1 class="text-2xl semi-bold mb-4">Overview</h1>
     <p class="mb-4">
         I&apos;ve developed a website that safeguards a secret message, requiring successful authentication for access. Following are the functions and features of this website.
     </p>
@@ -215,16 +215,15 @@ const ProjectItem = ({item}) => {
     }
     {item == 'shangri-la' ? (
 <div class="container mx-auto p-4">
-    <h1 class="text-4xl semi-bold mb-6">Case Study: Shangri-La Resort WordPress Theme</h1>
-
-    <h2 class="text-2xl semi-bold mb-4">Overview</h2>
+    <h1 class="text-2xl semi-bold mb-6">Case Study: Shangri-La Resort WordPress Theme</h1>
+    <h2 class="text-xl semi-bold mb-4">Overview</h2>
     <p class="text-gray-700 mb-8">
         The objective of this case study was to create a customized WordPress theme for the Shangri-La resort,
         enhancing its visual appeal and modernizing its web interface while maintaining the existing layout and
         data of the website.
     </p>
 
-    <h2 class="text-2xl semi-bold mb-4">Inspirations and Research</h2>
+    <h2 class="text-xl semi-bold mb-4">Inspirations and Research</h2>
     <p class="text-gray-700 mb-8">
         To achieve the project&apos;s goals, a thorough analysis was conducted by visiting the official website of
         Shangri-La. This involved studying the colour theory, tuning, and underlying technology utilized on the
@@ -232,13 +231,13 @@ const ProjectItem = ({item}) => {
         customers through the web interface.
     </p>
 
-    <h2 class="text-2xl semi-bold mb-4">Role</h2>
+    <h2 class="text-xl semi-bold mb-4">Role</h2>
     <p class="text-gray-700 mb-8">
         The project was led and executed by me with skills in graphic design and web development. The primary
         responsibility was the development of the WordPress theme module.
     </p>
 
-    <h2 class="text-2xl semi-bold mb-4">Planning Milestones</h2>
+    <h2 class="text-xl semi-bold mb-4">Planning Milestones</h2>
     <ul class="list-disc list-inside text-gray-700 mb-8">
         <li>Definition of Key Performance Indicators (KPIs) and mission-critical success factors to guide
             project evaluation.</li>
@@ -251,19 +250,19 @@ const ProjectItem = ({item}) => {
         <li>Project kick-off and final submission of the completed WordPress theme.</li>
     </ul>
 
-    <h2 class="text-2xl semi-bold mb-4">Two Draft Versions of the Web Layout with Colour Combination</h2>
+    <h2 class="text-xl semi-bold mb-4">Two Draft Versions of the Web Layout with Colour Combination</h2>
     <p class="text-gray-700 mb-8">
         Initial draft versions of the web layout were developed, showcasing the proposed colour combinations and
         design elements.
     </p>
 
-    <h2 class="text-2xl semi-bold mb-4">Final Version</h2>
+    <h2 class="text-xl semi-bold mb-4">Final Version</h2>
     <p class="text-gray-700 mb-8">
         The final version of the WordPress theme closely resembled the official Shangri-La resort hotel website,
         with similar colour schemes and web layouts.
     </p>
 
-    <h2 class="text-2xl semi-bold mb-4">Pain Points / Challenges</h2>
+    <h2 class="text-xl semi-bold mb-4">Pain Points / Challenges</h2>
     <ul class="list-disc list-inside text-gray-700 mb-8">
         <li>Restriction on modifying existing data and data relationships, necessitating the retention and
             seamless migration of existing authors and their posts to the new modern solution.</li>
@@ -273,7 +272,7 @@ const ProjectItem = ({item}) => {
             switching, which negatively impacted user experience when compared to modern JavaScript frameworks.</li>
     </ul>
 
-    <h2 class="text-2xl semi-bold mb-4">Call-to-Action</h2>
+    <h2 class="text-xl semi-bold mb-4">Call-to-Action</h2>
     <p class="text-gray-700 mb-8">
         Despite the aforementioned constraints, the project successfully addressed these challenges, and the
         required WordPress theme modules were developed, significantly enhancing the overall modernity of the
