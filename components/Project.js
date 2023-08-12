@@ -27,6 +27,7 @@ function Box({project, setShow}) {
         </div>
         <div className='p-2  md:p-8 text-left'>
           {/* <HtmlReader filename={project.html}/> */}
+          <img className="hidden md:block w-[40%] h-auto float-right mr-[0.6rem]  mt-[5rem] ml-[1rem] mb-[1rem] rounded-lg shadow-lg shadow-gray-400" src={project.image}/>
           <ProjectItem item={project.html}/>
         </div>
         <div className='flex flex-row justify-center items-center'>

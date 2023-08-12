@@ -555,8 +555,6 @@ const ProjectItem = ({item}) => {
         <p class="mt-0">All programming and design work is done by George Cheng.</p>
 
 </div>
-
-
         ):(null)
     }
     </>
