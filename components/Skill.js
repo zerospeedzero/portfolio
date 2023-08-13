@@ -72,7 +72,7 @@ const Skill = () => {
             ))}
           </div>
         {/* ) : ( */}
-          <motion.div className='w-full md:grid grid-cols-3 xl:grid-cols-4 gap-8 text-center py-0'
+          <motion.div className='w-full hidden md:grid grid-cols-3 xl:grid-cols-4 gap-8 text-center py-0'
             variants={container} initial="hidden" whileInView="visible"
           >
             {skills.map((skill, index) => (
