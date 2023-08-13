@@ -4,28 +4,28 @@ import { useState, useEffect } from 'react';
 
 
 const About = () => {
-  const [isMobile, setMobile] = useState(false);
-  useEffect(() => {
-    const userAgent =
-      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
-    const mobile = Boolean(
-      userAgent.match(
-        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-      )
-    );
-    setMobile(mobile);
-  }, []);
+  // const [isMobile, setMobile] = useState(false);
+  // useEffect(() => {
+  //   const userAgent =
+  //     typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+  //   const mobile = Boolean(
+  //     userAgent.match(
+  //       /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  //     )
+  //   );
+  //   setMobile(mobile);
+  // }, []);
   return (
     <div name='about' className='w-full h-screen'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pt-4'>
+          <div className='md:text-right pb-8 pt-4'>
             <h2 className='text-4xl font-bold inline border-b-4 border-pink-600'>About</h2>
           </div>
           <div></div>
         </div>
         <div className='max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right text-4xl font-bold'>
+          <div className='md:text-right text-4xl font-bold'>
             <motion.p 
               initial={{transform: "translateX(-300px)"}} whileInView={{transform: "translateX(0px)"}} transition={{type: 'spring'}}
             >

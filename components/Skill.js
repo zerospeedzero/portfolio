@@ -5,17 +5,17 @@ import {SiAnsible} from 'react-icons/si'
 import { useState, useEffect } from 'react'
 
 const Skill = () => {
-  const [isMobile, setMobile] = useState(false);
-  useEffect(() => {
-    const userAgent =
-      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
-    const mobile = Boolean(
-      userAgent.match(
-        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-      )
-    );
-    setMobile(mobile);
-  }, []);    
+  // const [isMobile, setMobile] = useState(false);
+  // useEffect(() => {
+  //   const userAgent =
+  //     typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+  //   const mobile = Boolean(
+  //     userAgent.match(
+  //       /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  //     )
+  //   );
+  //   setMobile(mobile);
+  // }, []);    
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -55,8 +55,8 @@ const Skill = () => {
           <p className='text-4xl inline border-b-4 border-pink-400 '>Skills</p>
           <p className='py-8'>There are the technologies I have worked with recently</p>
         </div>
-        {isMobile ? (
-          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-0'
+        {/* {isMobile ? ( */}
+          <div className='w-full grid grid-cols-2 md:hidden gap-8 text-center py-0'
           variants={container} initial="hidden" whileInView="visible"
           >
             {skills.map((skill, index) => (
@@ -71,8 +71,8 @@ const Skill = () => {
               </motion.div>
             ))}
           </div>
-        ) : (
-          <motion.div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-0'
+        {/* ) : ( */}
+          <motion.div className='w-full md:grid grid-cols-3 xl:grid-cols-4 gap-8 text-center py-0'
             variants={container} initial="hidden" whileInView="visible"
           >
             {skills.map((skill, index) => (
@@ -87,7 +87,7 @@ const Skill = () => {
               </motion.div>
             ))}
           </motion.div>
-        )}
+        {/* )} */}
       </div>
     </div>
   )

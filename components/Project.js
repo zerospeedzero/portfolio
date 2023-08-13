@@ -118,9 +118,9 @@ const Project = () => {
           <h2 className='text-4xl font-bold inline border-b-4 border-pink-600'>Projects</h2>
           <p className='py-3'>Check out some of my recent work</p>
         </div>
-        { isMobile != true ? (
-          // Desktop code
-          <motion.div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8" variants={container} initial="hidden" whileInView="visible"> 
+        {/* { isMobile != true ? ( */}
+          {/* Desktop code */}
+          <motion.div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={container} initial="hidden" whileInView="visible"> 
           { projects.map((project, index) => (
             <motion.div className="mb-0 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index} variants={item}>
               <div className="relative  group container rounded-md flex justify-center items-center mx-auto content-div">
@@ -152,9 +152,9 @@ const Project = () => {
             </motion.div>
           ))}
           </motion.div>
-        ) : (
-          // Mobile code
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"> 
+        {/* ) : ( */}
+          {/* Mobile code */}
+          <div className="grid sm:grid-cols-2 md:hidden gap-4"> 
           { projects.map((project, index) => (
             <div className="mb-16 shadow-md shadow-gray-900 rounded-lg border-2 border-p2" key={index}>
               <div className="relative  container flex justify-center items-center mx-auto ">
@@ -174,7 +174,7 @@ const Project = () => {
             </div>
           ))}
           </div>
-        )}
+        {/* )} */}
       </div>
     </div>
   )
