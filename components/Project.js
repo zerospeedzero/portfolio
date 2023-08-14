@@ -83,7 +83,7 @@ const Project = () => {
     {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
     {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
-    {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/ecommerce.mp4'},
+    {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/eCommerce.mp4'},
     // {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
   ]
   const container = {
