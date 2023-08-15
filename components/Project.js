@@ -19,7 +19,9 @@ function Box({project, setShow}) {
     }
   }, [isPresent, safeToRemove]);
   return (
-    <div className="w-screen bg-gray-600/60 flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}>
+    <motion.div className="w-screen  flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
+      initial={{scale:0, opacity:0}} animate={{scale:1, opacity: 1}} transition={{duration: 0.5}}
+    >
       <div className="max-w-[1180px] w-full h-full bg-p2 text-p1 min-h-[100px] mx-auto overflow-y-auto">
         <div className='bg-s1 flex justify-between items-center'>
           <h3 className="text-3xl p-4">{project.name}</h3>
@@ -34,7 +36,7 @@ function Box({project, setShow}) {
           <button className="bg-a1 text-p1 px-8 py-2 mb-8 rounded-md" onClick={()=>{setShow(false)}}>Close</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -50,11 +52,13 @@ function Video({videoUrl, setPlay}) {
     }
   }, [isPresent, safeToRemove]);
   return (
-    <div className="w-screen h-screen bg-gray-900/90 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}>
+    <motion.div className="w-screen h-screen bg-gray-900/90 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
+      initial={{scale:0, opacity:0}} animate={{scale:1, opacity: 1}} transition={{duration: 0.5, type: 'spring' }}
+    >
       <div className="max-w-[1180px] min-h-[100px]">
         <VideoPlayer videoUrl={videoUrl} setPlay={setPlay}/> 
       </div>
-    </div>
+    </motion.div>
   )
 }
 
