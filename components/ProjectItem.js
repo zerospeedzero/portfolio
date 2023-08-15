@@ -412,7 +412,7 @@ const ProjectItem = ({item}) => {
             <li class="mb-1"><strong>Knowledge Consolidation with Generative Pre-training Transformer (GPT) Integration:</strong>
                 <ul className='list-disc list-inside pl-0 mt-2'>
                     <li>Training materials, along with client brief and module content, are synthesized into a unified document for embedding.</li>
-                    <li>Through LangChain and OpenAI text-embedding-ada-002 embedding model (Not GhatGPT), this data is segmented into 1000 tokens (with 200 tokens overlap), 
+                    <li>Through LangChain and OpenAI text-embedding-ada-002 embedding model (Not ChatGPT), this data is segmented into 1000 tokens (with 200 tokens overlap), 
                         subsequently stored in vectorstores within Supabase.com. This establishment acts as a repository for long-term memory and internal semantic search, 
                         enabling efficient querying on our website with natural language understanding response. After successfully clearing quizzes, users access this GPT capabilities.</li> 
                     <li>It serves as a private knowledge base, addressing project-specific queries, which conventional large language models lack expertise in handling, 
