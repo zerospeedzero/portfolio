@@ -113,7 +113,12 @@ const Project = () => {
   useEffect(() => {
     show && (document.body.style.overflow = 'hidden');
     !show && (document.body.style.overflow = 'unset');
-  }, [show ]);
+  }, [show]);
+  
+  useEffect(() => {
+    play && (document.body.style.overflow = 'hidden');
+    !play && (document.body.style.overflow = 'unset');
+  }, [play]);
 
   return (
     <div id="project" name="project" className='pt-[100px] min-h-screen'>
