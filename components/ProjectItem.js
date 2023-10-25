@@ -108,7 +108,7 @@ const ProjectItem = ({item}) => {
             The website has employed technologies provided by Microsoft Azure Cloud.
         </p>
         <p class="mb-4">
-            <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://gentle-field-08583d510.3.azurestaticapps.net/" target="_blank">Web demo</a>
+            <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://white-island-0ea43ea10.3.azurestaticapps.net/" target="_blank">Web demo</a>
         </p>
         <p class="mb-4">
             <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/nft.mp4" target="_blank">/assets/projects/nft.mp4</a>
