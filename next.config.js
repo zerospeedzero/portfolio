@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: '/app/out',
   reactStrictMode: true,
   images: {
     unoptimized: true,
