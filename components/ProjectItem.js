@@ -469,9 +469,9 @@ const ProjectItem = ({item}) => {
     <p class="mt-4 mb-4">
         The website has employed technologies provided by Microsoft Azure Cloud, YouTube API, Slides.com embedding, LangChain, OpenAI, Vectorstores and NextJS framework.
     </p>
-    <p class="mb-4">
+    {/* <p class="mb-4">
             <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://sait-monopoly.azurewebsites.net/" target="_blank">https://sait-monopoly.azurewebsites.net/</a>
-    </p>
+    </p> */}
     <p class="mb-4">
         <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/monopoly.mp4" target="_blank">monopoly.mp4</a>
     </p>
