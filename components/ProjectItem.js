@@ -557,6 +557,183 @@ const ProjectItem = ({item}) => {
 </div>
         ):(null)
     }
+    {item == 'pwa' ? (
+    <div className="container mx-auto p-4">
+        <h1 className="text-2xl font-semibold mb-4">Progressive Web Application (PWA) for NFT Showcase</h1>
+
+        <div>
+        <h2 className="text-xl font-semibold mb-4">Goals:</h2>
+        <p>
+            The primary aim of this portfolio work is to create a cutting-edge Progressive Web Application (PWA) hosted on Microsoft Azure. Leveraging Next.js, a contemporary JavaScript framework, the project enables seamless third-party user authentication. Users, upon successful email-based authentication, can showcase NFTs on a blockchain network, making NFT accessibility easier for a broader audience. The project seeks to empower individuals unfamiliar with blockchain technology, offering a user-friendly platform for appreciating artistic creations created by Artificial Intelligence. The PWA&apos;s cross-platform compatibility addresses vendor lock-in challenges commonly encountered in major app stores (e.g., Apple’s App Store and Google Play Store). It also boasts a push notification feature, setting it apart from conventional web technologies.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Value Proposition:</h2>
+        <p>
+            This portfolio work contributes to the evolution of secure user authentication, moving away from storing credentials on the web server. It aligns with the transition from Web 2.0 to Web 3.0, addressing the increasing demand for OAuth proficiency and Progressive Web Application skills among full-stack developers. The work&apos;s value lies in simplifying NFT interaction and making it accessible to a wider audience while enhancing user security and staying technologically competitive. Furthermore, it illustrates the potential applications and motivations behind the utilization of text-to-image technology.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Technology Use:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+            <li className="mb-1"><strong>Microsoft Azure Cloud Infrastructure:</strong> The project leverages the Microsoft Azure Cloud Infrastructure for hosting and managing various services.</li>
+            <li className="mb-1"><strong>Next.js JavaScript Framework:</strong> Next.js serves as the foundation for the PWA, providing a modern and efficient JavaScript framework.</li>
+            <li className="mb-1"><strong>Third-party User Authentication:</strong> The project integrates third-party user authentication to enhance security and user experience.</li>
+            <li className="mb-1"><strong>Blockchain Integration:</strong> Blockchain technology is incorporated to facilitate the showcasing of NFTs.</li>
+            <li className="mb-1"><strong>Progressive Web Application (PWA) Technology:</strong> The PWA technology ensures a seamless and native-like experience across various platforms.</li>
+            <li className="mb-1"><strong>Cross-platform Compatibility:</strong> The PWA is designed to be compatible with different devices, addressing vendor lock-in challenges.</li>
+            <li className="mb-1"><strong>Push Notification Feature:</strong> The project distinguishes itself with a push notification feature, enhancing user engagement.</li>
+            <li className="mb-1"><strong>Stable Diffusion (Text to Image generation by AI):</strong> Text-to-image generation using Stable Diffusion technology plays a key role in creating NFTs.</li>
+            <li className="mb-1"><strong>ControlNet (Influence image generation):</strong> ControlNet is utilized to influence the image generation process, incorporating a facial vector image for enhanced graphic designs.</li>
+        </ol>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Design Principles of User Experience and Interface:</h2>
+        <ul className="list-disc list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>User-Friendly Interface:</strong> The design prioritizes a clean, modern, and intuitive interface for easy navigation, ensuring that users of all levels of technical expertise can enjoy NFTs.</li>
+        <li className="mb-1"><strong>Responsive Design:</strong> The PWA adapts seamlessly to various screen sizes, providing a consistent experience on both desktop and mobile devices.</li>
+        <li className="mb-1"><strong>Security:</strong> Robust security measures, including email verification, are integrated to protect user data and credentials.</li>
+        <li className="mb-1"><strong>Color, Typography, and DOM Design:</strong> The website adheres to color theory, ensuring that fonts and backgrounds maintain a high level of contrast to enhance readability. Additionally, it employs proportional and hierarchical font sizes for headings and text, effectively guiding the reader&apos;s eye across the page and emphasizing the significance of the message.</li>
+        <li className="mb-1"><strong>Accessibility:</strong> The project ensures that users without prior blockchain knowledge can access and appreciate NFTs.</li>
+        </ul>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Use Cases:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>Installation Icon:</strong> When a user visits the front page, they encounter an installation icon near the navigation bar, enabling PWA installation on desktop and mobile devices, delivering a native app-like experience.</li>
+        <li className="mb-1"><strong>Cross-platform Web Application:</strong> Once the installation is done, users are able to start this web application just like the desktop installable.</li>
+        <li className="mb-1"><strong>Authentication Prompt:</strong> On the front page, unauthenticated users see a login button “Web 2.0 Login”, and the page adapts to various screen sizes to enhance user experience.</li>
+        <li className="mb-1"><strong>Email Verification:</strong> The authentication process involves email verification to ensure user security.</li>
+        <li className="mb-1"><strong>SAIT NMPD 2023 Alumni NFT edition:</strong> Once successfully authenticated, the webpage will allow the users to claim SAIT NMPD 2023 Alumni NFT edition.</li>
+        <li className="mb-1"><strong>Claim NFT:</strong> Acquiring the &quot;SAIT NMPD 2023 Alumni Edition Drop NFT&quot; comes at no cost to users. Users are encouraged to safeguard this NFT within their virtual wallets, linking it to their preferred authentication method. This NFT could serve as a potential membership credential for our exciting future alumni community, opening up a world of captivating possibilities. Also, this might mark the initial NFT acquisition in our users&apos; journey toward Web 3.0.</li>
+        <li className="mb-1"><strong>My NFT Collection:</strong> When the user clicks the “Market” menu, it will show my SAIT NMMP independent study collection of NFT. This showcases the NFT collection I&apos;ve curated as part of an independent study. It comprises 33 graphic designs, each image generated in just 30 seconds using the cutting-edge Stable Diffusion 2.1 text-to-image generation technique. The iterative U-Net denoising process is enhanced by harnessing ControlNet, which incorporates a facial vector image meticulously crafted in Adobe Illustrator. This unique influence has played a pivotal role in shaping the resulting images at every stage of the processing journey. Hovering the mouse cursor over the graphic designs will show the tokenization input for Stable Diffusion. It will also reveal key information, including the contract address of the creator (myself) and the marketplace contract address within the blockchain network.</li>
+        </ol>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        <p className="mb-4">
+        <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-pwa.azurewebsites.net/" target="_blank">https://sait-pwa.azurewebsites.net/</a>
+        </p>
+        <p className="mb-4">
+        <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/progressive-web-app" target="_blank">https://github.com/zerospeedzero/progressive-web-app</a>
+        </p>
+    </div>
+        ) : (null)}
+    {item === 'newsportal' ? (
+    <div className="container mx-auto p-4">
+        <h1 className="text-2xl font-semibold mb-4">Intuitive News Portal with Next.js</h1>
+
+        <div>
+        <h2 className="text-xl font-semibold mb-4">Goals:</h2>
+        <p>
+            The core objective of this portfolio work is to craft an intuitive web portal, accessible on both mobile and desktop devices, for users seeking the latest news from various sources. The project is driven by the implementation of the Canadian Online News Act in June 2023, which may impose restrictions on social media platforms and search engines in sharing news content. In response, this solution focuses on creating a news portal that doesn&apos;t store news content but directs users to the official websites of news publishers, fostering a seamless and informed user experience.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Value Proposition:</h2>
+        <p>
+            This portfolio work underscores the notion that professionals should leverage their expertise to address real-world business challenges instead of just personal interests. By bridging the gap between the evolving regulations and the user&apos;s need for timely news updates, it highlights the effectiveness of technology in resolving these issues. The portfolio work aligns with the interests of social media users who strive to stay informed through diverse news sources.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Technology Use:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+            <li className="mb-1"><strong>Next.js for Web Portal Development:</strong> Next.js is utilized as the framework for developing the intuitive web portal.</li>
+            <li className="mb-1"><strong>Framer Motion for Animation:</strong> Framer Motion enhances the user experience with smooth animations.</li>
+            <li className="mb-1"><strong>News Application Programming Interface (API) for News Retrieval:</strong> The project leverages a News API to retrieve news content dynamically.</li>
+            <li className="mb-1"><strong>LangChain and Generative Pre-trained Transformer (GPT):</strong> LangChain and GPT are employed for specific functionalities in the project.</li>
+        </ol>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Design Principles of User Experience and Interface:</h2>
+        <ul className="list-disc list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>User-Centric Interface:</strong> The design focuses on a user-friendly and responsive interface for seamless accessibility from both mobile and desktop devices.</li>
+        <li className="mb-1"><strong>Efficient Presentation:</strong> The presentation of news on the portal aims for efficiency and effectiveness, providing users with clear headlines, accompanying images, news sources, and easy access to full articles.</li>
+        <li className="mb-1"><strong>Content Categorization:</strong> The portal is designed to categorize news based on interests, sources, and significance, facilitating an organized and user-centric experience.</li>
+        <li className="mb-1"><strong>Search Functionality:</strong> The inclusion of a search functionality enhances user convenience, allowing them to find news content tailored to their preferences.</li>
+        <li className="mb-1"><strong>Color, Typography, and DOM Design:</strong> The website adheres to color theory, ensuring that fonts and backgrounds maintain a high level of contrast to enhance readability. Additionally, it employs proportional and hierarchical font sizes for headings and text, effectively guiding the reader&apos;s eye across the page and emphasizing the significance of the message.</li>
+        <li className="mb-1"><strong>Copyright Compliance:</strong> Strict adherence to copyright regulations is prioritized. The work employs the developer tier of the News API exclusively for testing and educational purposes, with a prominent disclaimer to this effect on the website&apos;s front page. Users are directed to the official website for full articles.</li>
+        </ul>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Use Cases:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>News Portal Access:</strong> Users need to answer three secret questions to access the News Portal. The background animation using Three JS will change based on the user&apos;s provided answers.</li>
+        <li className="mb-1"><strong>Secret Messages:</strong> In case of incorrect answers, the background color and animation speed will change to black and four times faster, respectively, providing a better user experience.</li>
+        <li className="mb-1"><strong>Correct Secrets:</strong> For the correct answer, the theme will change to blue in color via Three JS and corresponding DOM elements.</li>
+        <li className="mb-1"><strong>Headline News:</strong> Upon successful login, users are greeted with a news portal displaying headlines, images, news sources, and &quot;more&quot; buttons for news articles.</li>
+        <li className="mb-1"><strong>Official News:</strong> Redirection to Official Sources: Clicking the news cards will redirect users to the official content of the selected news article, ensuring adherence to copyright regulations.</li>
+        <li className="mb-1"><strong>Category:</strong> Through the news portal, users will have the ability to filter and display news according to specific categories, including business, entertainment, health, science, general, sports, and technology.</li>
+        </ol>
+        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        <p className="mb-4">
+        <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-newsportal.azurewebsites.net/" target="_blank">https://sait-newsportal.azurewebsites.net/</a>
+        </p>
+        <p className="mb-4">
+        <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/news-portal" target="_blank">https://github.com/zerospeedzero/news-portal</a>
+        </p>
+
+    </div>
+    ) : (null)}
+    {item === 'earth3d' ? (
+    <div className="container mx-auto p-4">
+        <h1 className="text-2xl font-semibold mb-4">Impressive 3D Earth Animation with Three.js</h1>
+
+        <div>
+        <h2 className="text-xl font-semibold mb-4">Goals:</h2>
+        <p>
+            I propose the development of an impressive 3D animation project to enhance my portfolio, showcasing my expertise in various aspects of 3D animation, including 3D modelling, texturing, animation, lighting, and rendering. The main goal is to create a captivating, animated representation of the Earth seamlessly integrated into a web environment using the Three.js framework and other relevant 3D libraries. Additionally, I aim to mark countries and cities on the Earth&aposs surface that correspond to locations I have previously visited, utilizing data sourced from my Facebook albums or Trip Advisor map through a JSON file or a cloud-based database as the intermediary component.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Value Proposition:</h2>
+        <p>
+            The project aligns seamlessly with the evolving job market needs in AR/VR, particularly in the context of immersive and interactive 3D experiences. This positions me as a desirable candidate capable of crafting engaging, user-centric 3D content, a crucial requirement in industries like AR/VR where user engagement and interactivity hold paramount importance. Moreover, the creation of web-based 3D integration corresponds with the growing demand for web-based AR/VR experiences, as businesses increasingly seek to enhance the interactivity and accessibility of their products and services.
+            This project also resonates with my prior work in Augmented Virtual Design, particularly in my other portfolio project &quot;Monopoly,&quot; where I integrated 3D models and presented them on web technology alongside native application development.
+        </p>
+        </div>
+
+        <div className="mt-4">
+        <h2 className="text-xl font-semibold mb-4">Technology Use:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+            <li className="mb-1"><strong>Microsoft Azure Cloud Infrastructure:</strong> Utilized for cloud services.</li>
+            <li className="mb-1"><strong>Next.js JavaScript Framework:</strong> The framework for web development.</li>
+            <li className="mb-1"><strong>Three JS Animation:</strong> Three.js is used for creating captivating 3D animations.</li>
+            <li className="mb-1"><strong>Motion Framer:</strong> Motion Framer enhances animation effects.</li>
+            <li className="mb-1"><strong>React Icon:</strong> React Icon is employed for icon integration.</li>
+            <li className="mb-1"><strong>React Globe GL:</strong> Used for globe visualization.</li>
+            <li className="mb-1"><strong>Three Globe:</strong> Another library for globe visualization.</li>
+        </ol>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Design Principles of User Experience and Interface:</h2>
+        <ul className="list-disc list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>Adaptive Responsiveness:</strong> The grid and flex layout seamlessly adapt to diverse screen sizes, delivering a consistent and enjoyable experience on both desktop and mobile devices.</li>
+        <li className="mb-1"><strong>Intuitive User Interface:</strong> The design places a strong emphasis on creating a contemporary, user-friendly interface that facilitates easy navigation. This ensures that individuals with varying levels of technical proficiency can engage with this animated website effortlessly.</li>
+        <li className="mb-1"><strong>Thoughtful Design Elements:</strong> The website meticulously follows color theory principles to maintain optimal contrast between fonts and backgrounds, thereby enhancing readability. Additionally, it employs proportional and hierarchical font sizing for headings and text, skillfully guiding the reader&apos;s gaze across the page and underscoring the message&apos;s importance.</li>
+        </ul>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Use Cases:</h2>
+        <ol className="list-decimal list-inside pl-0 mt-2">
+        <li className="mb-1"><strong>Use Case 1:</strong> Accessing the animated 3D Earth website leads to the welcome page of my travel map.</li>
+        <li className="mb-1"><strong>Use Case 2:</strong> Upon clicking &quot;Explore,&quot; you will encounter an animated 3D world set in clockwise rotation from the northern point, complete with captivating lighting and shadow effects.</li>
+        <li className="mb-1"><strong>Use Case 3:</strong> Clicking the Settings icon located in the upper-left corner enables users to adjust the speed of the Earth&apos;s rotation to their preference.</li>
+        <li className="mb-1"><strong>Use Case 4:</strong> Users can manually zoom in and out to explore the cities I have visited, allowing for a closer look at these destinations. (Note: Project is under development for color and text size adjustments)</li>
+        <li className="mb-1"><strong>Use Case 5:</strong> Stopping the world&apos;s rotation reveals a distinct cloud layer moving westward, as it operates independently to enhance the scene&apos;s realism.</li>
+        <li className="mb-1"><strong>Use Case 6:</strong> By changing the map type to &quot;countries,&quot; users can access additional information such as population and GDP when hovering the mouse pointer over specific countries, providing valuable insights into global data.</li>
+        </ol>
+
+        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        <p className="mb-4">
+        <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://polite-pond-03c56fd10.4.azurestaticapps.net" target="_blank">https://polite-pond-03c56fd10.4.azurestaticapps.net</a>
+        </p>
+        <p className="mb-4">
+        <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/earth3d.git" target="_blank">https://github.com/zerospeedzero/earth3d.git</a>
+        </p>
+    </div>
+    ) : (null)}
     </>
   )
 

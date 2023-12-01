@@ -47,6 +47,9 @@ const Skill = () => {
     {name: 'MCTS', image: '/assets/skills/badge-opencts-master.png', hints: 'Master CTS'},
     {name: 'ITIL v3 Expert', image: '/assets/skills/ITIL.svg', hints: 'ITIL'},
     {name: 'Instana', image: '/assets/skills/Instana_by_IBM_-_Technical_Sales_Intermediate.png', hints: 'Instana'},
+    {name: 'PhotoShop', image: '/assets/skills/adobe-photoshop-seeklogo.com.svg', hints: 'Photoshop'},
+    {name: 'Premiere Pro', image: '/assets/skills/adobe-premiere-seeklogo.com.svg', hints: 'Premiere'},
+    {name: 'Cinema 4D', image: '/assets/skills/cinema-4d-vector-logo-seeklogo.com.svg', hints: 'Cinema 4D'},
   ]
   return (
     <div id='skill' name='skill' className='w-full min-h-screen pt-[100px]'>

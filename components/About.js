@@ -36,7 +36,7 @@ const About = () => {
             <motion.p
               initial={{transform: "translateY(100px)"}} whileInView={{transform: "translateY(0px)"}} transition={{type: 'spring'}}
             >
-            I have been deeply engaged in guiding clients through their cloud migration journey, leveraging my expertise in proof of technologies and pilot projects for Cloud Platform Management encompassing vanilla Kubernetes and OpenShift. My passion for DevSecOps is evident in the workshops I design and conduct, facilitating smooth CI/CD adoption and efficient Day 2 management solutions for clients. As a specialized technical professional, my focus on AIOps has allowed me to demonstrate its invaluable role in proactively detecting hidden issues and optimizing business application availability for enhanced operational efficiency. Moreover, I have been working on some Blockchain and local GPT projects recently.
+            I have been deeply engaged in guiding clients through their cloud migration journey, leveraging my expertise in proof of technologies and pilot projects for Cloud Platform Management encompassing vanilla Kubernetes and OpenShift. My passion for DevSecOps is evident in the workshops I design and conduct, facilitating smooth CI/CD adoption and efficient Day 2 management solutions for clients. As a specialized technical professional, my focus on AIOps has allowed me to demonstrate its invaluable role in proactively detecting hidden issues and optimizing business application availability for enhanced operational efficiency. Moreover, I have been working on some Blockchain, local GPT and text-to-graphic AI graphic design projects recently.
             </motion.p>
           </div>
         </div>

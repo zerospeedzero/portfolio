@@ -22,7 +22,8 @@ function Box({project, setShow}) {
     <motion.div className="w-screen  flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
       initial={{scale:0, opacity:0}} animate={{scale:1, opacity: 1}} transition={{duration: 0.5}}
     >
-      <div className="max-w-[1180px] w-full h-full bg-p2 text-p1 min-h-[100px] mx-auto overflow-y-auto">
+      {/* <div className="max-w-[1180px] w-full h-full bg-p2 text-p1 min-h-[100px] mx-auto overflow-y-auto"> */}
+      <div className="w-full h-full bg-p2 text-p1 min-h-[100px] mx-auto overflow-y-auto">
         <div className='bg-s1 flex justify-between items-center'>
           <h3 className="text-3xl p-4">{project.name}</h3>
           <button className="text-p1 px-10 py-4" onClick={()=>{setShow(false)}}><FaWindowClose className='w-6 h-6'/></button>
@@ -88,7 +89,9 @@ const Project = () => {
     {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
     {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/eCommerce.mp4'},
-    // {name: 'Visual effect and 3D', html:  '', image: '/assets/projects/dance.gif', video: '/assets/projects/dance.mp4'},
+    {name: 'Progressive Web', html:  'pwa', image: '/assets/projects/pwa.gif', video: '/assets/projects/pwa.mp4'},
+    {name: 'News Portal', html:  'newsportal', image: '/assets/projects/newsportal.gif', video: '/assets/projects/newsportal.mp4'},
+    {name: 'Earth 3D', html:  'earth3d', image: '/assets/projects/earth3d.gif', video: '/assets/projects/earth3d.mp4'},
   ]
   const container = {
     hidden: { opacity: 1, scale: 0 },
