@@ -3,32 +3,6 @@ import {useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import {motion, useScroll, useMotionValueEvent, useMotionValue} from 'framer-motion'
 const Hero = () => {
-  // const [opacity, setOpacity] = useState(1)
-  // useEffect(() => {
-  //   const changeOpacity = () => {
-  //     if(window.scrollY >= 90) {
-  //       setOpacity(1)
-  //     } else {
-  //       setOpacity(0)
-  //     }
-  //   }
-  //   window.addEventListener('scroll', changeOpacity);
-  // }, [])  
-  // const scrollRef = useRef(null)
-  // const {scrollYProgress} = useScroll({
-  //   target: scrollRef,
-  //   offset: ["start start", "end end"]
-  // })
-  // useEffect(() => {
-  //   console.log(scrollYProgress)
-  // },[scrollYProgress])
-
-  // const { scrollYProgress } = useScroll()
-
-  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
-  //   console.log("Page scroll: ", latest)
-  // })
-
   return (
     <div name="hero" className='w-full h-screen'>
       {/* Container */}
