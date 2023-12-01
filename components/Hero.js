@@ -36,7 +36,7 @@ const Hero = () => {
       >
         {/* <p className='text-s2 pb-2'>Hi, my name is</p> */}
         <motion.h3 className='text-4xl sm:text-7xl font-bold text-s1' 
-          initial={{transform: "translateY(-500px)"}} animate={{transform: "translateY(0px)"}} exit={{opacity: 0}} transition={{duration: 1, delay: 0.7}}
+          initial={{transform: "translateY(-600px)"}} animate={{transform: "translateY(0px)"}} exit={{opacity: 0}} transition={{duration: 1, delay: 0.7}}
         >
           George Cheng 
         </motion.h3>
