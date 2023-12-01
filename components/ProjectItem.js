@@ -707,7 +707,6 @@ const ProjectItem = ({item}) => {
             <li className="mb-1"><strong>Three Globe:</strong> Another library for globe visualization.</li>
         </ol>
         </div>
-
         <h2 className="text-xl font-semibold mb-4 mt-8">Design Principles of User Experience and Interface:</h2>
         <ul className="list-disc list-inside pl-0 mt-2">
         <li className="mb-1"><strong>Adaptive Responsiveness:</strong> The grid and flex layout seamlessly adapt to diverse screen sizes, delivering a consistent and enjoyable experience on both desktop and mobile devices.</li>
