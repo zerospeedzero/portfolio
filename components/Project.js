@@ -73,7 +73,7 @@ const Project = () => {
       userAgent.match(
         /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
       )
-    );
+    ); 
     setMobile(mobile);
   }, []);
   const [show, setShow] = useState(false);
