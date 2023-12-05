@@ -80,18 +80,18 @@ const Project = () => {
   const [play, setPlay] = useState(false);
   const [current, setCurrent] = useState(null);
   const projects = [
+    {name: 'Progressive Web', html:  'pwa', image: '/assets/projects/pwa.gif', video: '/assets/projects/pwa.mp4'},
+    {name: 'News Portal', html:  'newsportal', image: '/assets/projects/newsportal.gif', video: '/assets/projects/newsportal.mp4'},
+    {name: 'Earth 3D', html:  'earth3d', image: '/assets/projects/earth3d.gif', video: '/assets/projects/earth3d.mp4'},
+    {name: 'AI GPT - Monopoly', html:  'monopoly', image: '/assets/projects/monopoly.gif', video: '/assets/projects/monopoly.mp4'},
+    {name: 'NFT SAIT Marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
     {name: 'Microservices', html:  'microservices', image: '/assets/projects/microservices.gif'},
     {name: 'Enterprise Private Cloud', html:  'private', image: '/assets/projects/private.gif', video: '/assets/projects/private.mp4'},
     {name: 'Open Source Pipeline', html:  'pipeline', image: '/assets/projects/pipeline.gif', video: '/assets/projects/pipeline.mp4'},
-    {name: 'NFT SAIT Marketplace', html:  'nft', image: '/assets/projects/nft.gif', video: '/assets/projects/nft.mp4'},
-    {name: 'AI GPT - Monopoly', html:  'monopoly', image: '/assets/projects/monopoly.gif', video: '/assets/projects/monopoly.mp4'},
     {name: 'Interactive Map', html:  'fishcreek', image: '/assets/projects/fishcreek.gif', video: '/assets/projects/fishcreek.mp4'},
     {name: 'Shangri-La Resort', html:  'shangri-la', image: '/assets/projects/shangri-la.gif', video: '/assets/projects/shangri-la.mp4'},
     {name: 'Animation by Vanilla JS', html:  'secret', image: '/assets/projects/secret.gif', video: '/assets/projects/secret.mp4'},
     {name: 'eCommerce', html:  'ec', image: '/assets/projects/ecommerce.gif', video: '/assets/projects/eCommerce.mp4'},
-    {name: 'Progressive Web', html:  'pwa', image: '/assets/projects/pwa.gif', video: '/assets/projects/pwa.mp4'},
-    {name: 'News Portal', html:  'newsportal', image: '/assets/projects/newsportal.gif', video: '/assets/projects/newsportal.mp4'},
-    {name: 'Earth 3D', html:  'earth3d', image: '/assets/projects/earth3d.gif', video: '/assets/projects/earth3d.mp4'},
   ]
   const container = {
     hidden: { opacity: 1, scale: 0 },
