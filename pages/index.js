@@ -12,7 +12,7 @@ import { motion, useScroll } from "framer-motion"
 import Head from "next/head"
 // import Head from  "next/script"
 import Script from 'next/script';
- 
+
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
