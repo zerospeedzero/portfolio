@@ -130,7 +130,7 @@ const Project = () => {
           <h2 className='text-4xl font-bold inline border-b-4 border-pink-600'>Projects</h2>
           <p className='py-2'>Check out some of my recent work</p>
         </div>
-        {/* { isMobile != true ? ( */}
+        {/* { isMobile != true ? ( */} 
           {/* Desktop code */}
           <motion.div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={container} initial="hidden" whileInView="visible"> 
           { projects.map((project, index) => (
