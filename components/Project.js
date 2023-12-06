@@ -124,11 +124,11 @@ const Project = () => {
   }, [play]);
 
   return (
-    <div id="project" name="project" className='pt-[100px] min-h-screen'>
+    <div id="project" name="project" className='pt-[60px] min-h-screen'>
       <div className='max-w-[1180px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div className='pb-6'>
           <h2 className='text-4xl font-bold inline border-b-4 border-pink-600'>Projects</h2>
-          <p className='py-3'>Check out some of my recent work</p>
+          <p className='py-2'>Check out some of my recent work</p>
         </div>
         {/* { isMobile != true ? ( */}
           {/* Desktop code */}
