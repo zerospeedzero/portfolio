@@ -683,7 +683,7 @@ const ProjectItem = ({item}) => {
         <div>
         <h2 className="text-xl font-semibold mb-4">Goals:</h2>
         <p>
-            I propose the development of an impressive 3D animation project to enhance my portfolio, showcasing my expertise in various aspects of 3D animation, including 3D modelling, texturing, animation, lighting, and rendering. The main goal is to create a captivating, animated representation of the Earth seamlessly integrated into a web environment using the Three.js framework and other relevant 3D libraries. Additionally, I aim to mark countries and cities on the Earth&aposs surface that correspond to locations I have previously visited, utilizing data sourced from my Facebook albums or Trip Advisor map through a JSON file or a cloud-based database as the intermediary component.
+            I propose the development of an impressive 3D animation project to enhance my portfolio, showcasing my expertise in various aspects of 3D animation, including 3D modelling, texturing, animation, lighting, and rendering. The main goal is to create a captivating, animated representation of the Earth seamlessly integrated into a web environment using the Three.js framework and other relevant 3D libraries. Additionally, I aim to mark countries and cities on the Earth&apos;surface that correspond to locations I have previously visited, utilizing data sourced from my Facebook albums or Trip Advisor map through a JSON file or a cloud-based database as the intermediary component.
         </p>
         </div>
 
