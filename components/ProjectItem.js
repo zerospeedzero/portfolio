@@ -54,9 +54,9 @@ const ProjectItem = ({item}) => {
       The website has employed technologies provided by Microsoft Azure Cloud and it follows mobile-first design
       best practices.
   </p>
-  <p class="mb-4">
+  {/* <p class="mb-4">
         <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://green-ocean-09524b910.3.azurestaticapps.net/" target="_blank">https://green-ocean-09524b910.3.azurestaticapps.net/</a>
-  </p>
+  </p> */}
   <p class="mb-4">
       <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/fishcreek.mp4" target="_blank">fishcreek.mp4</a>
   </p>
@@ -107,9 +107,9 @@ const ProjectItem = ({item}) => {
         <p class="mb-4">
             The website has employed technologies provided by Microsoft Azure Cloud.
         </p>
-        <p class="mb-4">
+        {/* <p class="mb-4">
             <strong>Website link:</strong> <a class="text-blue-500 hover:underline" href="https://white-island-0ea43ea10.3.azurestaticapps.net/" target="_blank">Web demo</a>
-        </p>
+        </p> */}
         <p class="mb-4">
             <strong>Video demo:</strong> <a class="text-blue-500 hover:underline" href="/assets/projects/nft.mp4" target="_blank">/assets/projects/nft.mp4</a>
         </p>
@@ -611,9 +611,9 @@ const ProjectItem = ({item}) => {
         </ol>
 
         <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
-        <p className="mb-4">
+        {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-pwa.azurewebsites.net/" target="_blank">https://sait-pwa.azurewebsites.net/</a>
-        </p>
+        </p> */}
         <p className="mb-4">
         <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/progressive-web-app" target="_blank">https://github.com/zerospeedzero/progressive-web-app</a>
         </p>
@@ -667,9 +667,9 @@ const ProjectItem = ({item}) => {
         <li className="mb-1"><strong>Category:</strong> Through the news portal, users will have the ability to filter and display news according to specific categories, including business, entertainment, health, science, general, sports, and technology.</li>
         </ol>
         <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
-        <p className="mb-4">
+        {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-newsportal.azurewebsites.net/" target="_blank">https://sait-newsportal.azurewebsites.net/</a>
-        </p>
+        </p> */}
         <p className="mb-4">
         <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/news-portal" target="_blank">https://github.com/zerospeedzero/news-portal</a>
         </p>
@@ -725,9 +725,9 @@ const ProjectItem = ({item}) => {
         </ol>
 
         <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
-        <p className="mb-4">
+        {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://polite-pond-03c56fd10.4.azurestaticapps.net" target="_blank">https://polite-pond-03c56fd10.4.azurestaticapps.net</a>
-        </p>
+        </p> */}
         <p className="mb-4">
         <strong>Source code:</strong> <a className="text-blue-500 hover:underline" href="https://github.com/zerospeedzero/earth3d.git" target="_blank">https://github.com/zerospeedzero/earth3d.git</a>
         </p>
