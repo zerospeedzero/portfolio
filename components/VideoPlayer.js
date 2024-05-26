@@ -38,6 +38,7 @@ const VideoPlayer = ({ videoUrl, setPlay }) => {
         className="w-full h-auto"
         onClick={toggleFullScreen}
         autoPlay
+        preload="auto"
       >
         <source src={videoUrl} type="video/mp4" />
         {/* <source src='http://dev.saitnewmedia.ca/~gcheng/video/index.html?movie=de.mp4' type="video/mp4" /> */}

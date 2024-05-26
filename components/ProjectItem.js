@@ -610,7 +610,7 @@ const ProjectItem = ({item}) => {
         <li className="mb-1"><strong>My NFT Collection:</strong> When the user clicks the “Market” menu, it will show my SAIT NMMP independent study collection of NFT. This showcases the NFT collection I&apos;ve curated as part of an independent study. It comprises 33 graphic designs, each image generated in just 30 seconds using the cutting-edge Stable Diffusion 2.1 text-to-image generation technique. The iterative U-Net denoising process is enhanced by harnessing ControlNet, which incorporates a facial vector image meticulously crafted in Adobe Illustrator. This unique influence has played a pivotal role in shaping the resulting images at every stage of the processing journey. Hovering the mouse cursor over the graphic designs will show the tokenization input for Stable Diffusion. It will also reveal key information, including the contract address of the creator (myself) and the marketplace contract address within the blockchain network.</li>
         </ol>
 
-        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        {/* <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2> */}
         {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-pwa.azurewebsites.net/" target="_blank">https://sait-pwa.azurewebsites.net/</a>
         </p> */}
@@ -666,7 +666,7 @@ const ProjectItem = ({item}) => {
         <li className="mb-1"><strong>Official News:</strong> Redirection to Official Sources: Clicking the news cards will redirect users to the official content of the selected news article, ensuring adherence to copyright regulations.</li>
         <li className="mb-1"><strong>Category:</strong> Through the news portal, users will have the ability to filter and display news according to specific categories, including business, entertainment, health, science, general, sports, and technology.</li>
         </ol>
-        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        {/* <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2> */}
         {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://sait-newsportal.azurewebsites.net/" target="_blank">https://sait-newsportal.azurewebsites.net/</a>
         </p> */}
@@ -724,7 +724,7 @@ const ProjectItem = ({item}) => {
         <li className="mb-1"><strong>Use Case 6:</strong> By changing the map type to &quot;countries,&quot; users can access additional information such as population and GDP when hovering the mouse pointer over specific countries, providing valuable insights into global data.</li>
         </ol>
 
-        <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2>
+        {/* <h2 className="text-xl font-semibold mb-4 mt-8">Live Demo:</h2> */}
         {/* <p className="mb-4">
         <strong>Live Demo:</strong> <a className="text-blue-500 hover:underline" href="https://polite-pond-03c56fd10.4.azurestaticapps.net" target="_blank">https://polite-pond-03c56fd10.4.azurestaticapps.net</a>
         </p> */}
