@@ -31,7 +31,7 @@ const VideoPlayer = ({ videoUrl, setPlay }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <video
         ref={videoRef}
         controls

@@ -49,10 +49,10 @@ function Video({ videoUrl, setPlay }) {
   }, []);
 
   return (
-    <motion.div className="w-screen h-screen bg-gray-900/90 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
+    <motion.div className="w-screen h-screen bg-gray-900/70 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
       initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5, type: 'spring' }}
     >
-      <div className="max-w-[1180px] min-h-[100px]">
+      <div className="max-w-[1180px] min-h-[100px] bg-white">
         <VideoPlayer videoUrl={videoUrl} setPlay={setPlay} />
       </div>
     </motion.div>
