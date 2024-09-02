@@ -1,33 +1,26 @@
 import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
-import { gsap } from "gsap";
 import { FaWindowClose } from 'react-icons/fa' 
 import VideoPlayer from '@/components/VideoPlayer'
 import HtmlReader from '@/components/HtmlReader';
 import ProjectItem from '@/components/ProjectItem';
 
 function Box({ project, setShow }) {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(ref.current, { opacity: 0 }, { opacity: 1, duration: 0.5 });
-    return () => {
-      gsap.to(ref.current, { opacity: 0, duration: 0.5 });
-    };
-  }, []);
-
   return (
-    <motion.div className="w-screen  flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
-      initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5 }}
+    <motion.div className="w-screen flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10"
+      initial={{ scale: 0, opacity: 0 }} 
+      animate={{ scale: 1, opacity: 1 }} 
+      exit={{ scale: 0, opacity: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="w-full h-full bg-p2 text-p1 min-h-[100px] mx-auto overflow-y-auto">
         <div className='bg-s1 flex justify-between items-center'>
           <h3 className="text-3xl p-4">{project.name}</h3>
           <button className="text-p1 px-10 py-4" onClick={() => { setShow(false) }}><FaWindowClose className='w-6 h-6' /></button>
         </div>
-        <div className='p-2  md:p-8 text-left'>
-          <img className="hidden md:block w-[40%] h-auto float-right mr-[0.6rem]  mt-[5rem] ml-[1rem] mb-[1rem] rounded-lg shadow-lg shadow-gray-400" src={project.image} />
+        <div className='p-2 md:p-8 text-left'>
+          <img className="hidden md:block w-[40%] h-auto float-right mr-[0.6rem] mt-[5rem] ml-[1rem] mb-[1rem] rounded-lg shadow-lg shadow-gray-400" src={project.image} />
           <ProjectItem item={project.html} />
         </div>
         <div className='flex flex-row justify-center items-center'>
@@ -39,18 +32,12 @@ function Box({ project, setShow }) {
 }
 
 function Video({ videoUrl, setPlay }) {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(ref.current, { opacity: 0 }, { opacity: 1, duration: 0.5 });
-    return () => {
-      gsap.to(ref.current, { opacity: 0, duration: 0.5 });
-    };
-  }, []);
-
   return (
-    <motion.div className="w-screen h-screen bg-gray-900/70 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10" ref={ref}
-      initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5, type: 'spring' }}
+    <motion.div className="w-screen h-screen bg-gray-900/70 flex flex-col justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10"
+      initial={{ scale: 0, opacity: 0 }} 
+      animate={{ scale: 1, opacity: 1 }} 
+      exit={{ scale: 0, opacity: 0 }}
+      transition={{ duration: 0.5, type: 'spring' }}
     >
       <div className="max-w-[1180px] min-h-[100px] bg-white">
         <VideoPlayer videoUrl={videoUrl} setPlay={setPlay} />
@@ -101,14 +88,12 @@ const Project = () => {
     visible: { y: 0, opacity: 1 }
   }
   useEffect(() => {
-    show && (document.body.style.overflow = 'hidden');
-    !show && (document.body.style.overflow = 'unset');
-  }, [show]);
-
-  useEffect(() => {
-    play && (document.body.style.overflow = 'hidden');
-    !play && (document.body.style.overflow = 'unset');
-  }, [play]);
+    if (show || play) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [show, play]);
 
   return (
     <div id="project" name="project" className='pt-[60px] min-h-screen'>
@@ -128,17 +113,15 @@ const Project = () => {
                   </span>
                   <div className='pt-8 text-center md:opacity-100'>
                     {project.html && <button className='text-center min-w-[100px] rounded-lg px-2 py-2 m-2 bg-white text-p1 font-bold text-md'
-                      onClick={() => { setCurrent(project); setShow(!show) }}
+                      onClick={() => { setCurrent(project); setShow(true) }}
                     >
                       Detail
                     </button>}
-                    {(show && current.name == project.name) ? <Box project={current} setShow={setShow} /> : null}
                     {project.video && <button className='invisible md:visible text-center min-w-[100px] rounded-lg px-2 py-2 m-2 bg-white text-gray-700 font-bold text-md'
                       onClick={() => { setCurrent(project); setPlay(true) }}
                     >
                       Demo
                     </button>}
-                    {(play && current.name == project.name) ? <Video videoUrl={current.video} setPlay={setPlay} /> : null}
                   </div>
                 </div>
               </div>
@@ -154,20 +137,22 @@ const Project = () => {
               <div className="relative container flex justify-center items-center mx-auto ">
                 <img className="absolute z-[-1]" src={project.image} width="auto" height="auto" />
                 <div className="w-full aspect-video flex flex-col justify-center items-center rounded-md bg-transparent">
-                  <button className="w-full h-full" onClick={() => { setCurrent(project); if (project.html == '') { setPlay(true) } else { setShow(!show) }; }}></button>
-                  {(show && current.name == project.name) ? <Box project={current} setShow={setShow} /> : null}
-                  {(play && current.name == project.name) ? <Video videoUrl={current.video} setPlay={setPlay} /> : null}
+                  <button className="w-full h-full" onClick={() => { setCurrent(project); if (project.html == '') { setPlay(true) } else { setShow(true) }; }}></button>
                 </div>
               </div>
-
               <div className='flex bg-p1 p-8 flex-col justify-center items-center py-2'>
                 <h3 className='text-p2 '>{project.name}</h3>
               </div>
-
             </div>
           ))}
         </div>
       </div>
+      <AnimatePresence>
+        {show && <Box project={current} setShow={setShow} />}
+      </AnimatePresence>
+      <AnimatePresence>
+        {play && <Video videoUrl={current.video} setPlay={setPlay} />}
+      </AnimatePresence>
     </div>
   )
 }
