@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script> */}
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />
